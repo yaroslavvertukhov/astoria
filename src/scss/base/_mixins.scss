@@ -1,0 +1,79 @@
+/**
+ * Helper mixins
+*/
+
+// Media queries
+@mixin bp($point) {
+	@if $point == large {
+		@media (min-width: 1280px) {
+			@content;
+		}
+	} @else if $point == small {
+		@media (max-width: 1279px) {
+			@content;
+		}
+	}
+}
+
+// Text selection
+@mixin text-selection($color-selection, $color-selection-bg) {
+	::selection {
+		background: $color-selection-bg;
+		color: $color-selection;
+		text-shadow: none;
+	}
+}
+
+// Placeholders
+// Usage:
+// @include placeholder;
+@mixin placeholder {
+	::placeholder {
+		@content;
+	}
+}
+
+@function pct-s($size, $sizeParent) {
+	@return calc($size / $sizeParent * 100%)
+};
+
+@function flex-gap($gap, $columns) {
+	@return calc(100% / $columns - $gap * ($columns - 1) / $columns)
+};
+
+
+
+
+
+
+
+@mixin device ($breakpoint) {
+
+    @if $breakpoint == tablet {
+
+        @media only screen and (min-width: $tablet) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == desktop {
+
+        @media only screen and (min-width: $desktop) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == toTablet {
+
+        @media only screen and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == toDesktop {
+
+        @media only screen and (max-width: 1199px) {
+            @content;
+        }
+    }
+}

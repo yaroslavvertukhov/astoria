@@ -1,0 +1,28 @@
+.request {
+	@media ($max767) {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+	&__row {
+		@media ($min1024) {
+			display: flex;
+			gap: 40px;
+		}
+	}
+	&__col {
+		@media ($min1024) {
+			width: 50%;
+		}
+	}
+	&__head {
+		@media ($max1023) {
+			margin-bottom: 24px;
+		}
+	}
+	&__form {
+		@media ($min1024) {
+			width: 100%;
+			max-width: 540px;
+		}
+	}
+}

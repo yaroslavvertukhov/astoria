@@ -1,0 +1,15 @@
+.partners {
+    @media ($max767) {
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    &__logo {
+        width: 100%;
+        max-width: 1010px;
+        margin: 0 auto;
+        filter: grayscale(1);
+        &:before {
+            padding-bottom: pct-s(279, 1010);
+        }
+    }
+}

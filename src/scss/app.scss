@@ -1,0 +1,39 @@
+/* Core variables */
+@import 'base/vars';
+
+/* CSS Reset */
+@import 'base/reset';
+
+/* CSS print */
+@import 'base/print';
+
+/* Fonts */
+@import 'base/fonts';
+
+/* GLobal */
+@import 'base/global';
+
+/* Mixins, helpers and functions */
+@import 'base/mixins';
+@import 'base/layout';
+
+/* Vendor */
+// @import "/~@fancyapps/ui/dist/fancybox/fancybox.css";
+@import 'modules/vendor/fancybox.css';
+
+/* ui-kit */
+@import 'base/ui-kit';
+
+/* Components */
+@import 'modules/common/header.scss';
+@import 'modules/common/footer.scss';
+@import 'modules/common/popup.scss';
+@import 'modules/common/form.scss';
+@import 'modules/common/intro.scss';
+@import 'modules/common/principles.scss';
+@import 'modules/common/partners.scss';
+@import 'modules/common/grid.scss';
+@import 'modules/common/request.scss';
+
+/* Browser specific styles */
+@import 'dirty/hacks';

@@ -1,0 +1,43 @@
+/**
+ * Fonts
+*/
+
+@font-face {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./../fonts/Times-New-Roman-Regular.woff2') format('woff2'),
+         url('./../fonts/Times-New-Roman-Regular.woff') format('woff'),
+         url('./../fonts/Times-New-Roman-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./../fonts/Times-New-Roman-Italic.woff2') format('woff2'),
+         url('./../fonts/Times-New-Roman-Italic.woff') format('woff'),
+         url('./../fonts/Times-New-Roman-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Tilda Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./../fonts/Tilda-Sans-Regular.woff2') format('woff2'),
+         url('./../fonts/Tilda-Sans-Regular.woff') format('woff'),
+         url('./../fonts/Tilda-Sans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Tilda Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('./../fonts/Tilda-Sans-Medium.woff2') format('woff2'),
+         url('./../fonts/Tilda-Sans-Medium.woff') format('woff'),
+         url('./../fonts/Tilda-Sans-Medium.ttf') format('truetype');
+}
