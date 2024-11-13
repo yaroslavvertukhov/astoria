@@ -84,11 +84,14 @@
 		"build": "webpack --config configuration/webpack.prod.config.js --mode=production",
 		"lint:scss": "stylelint \"src/scss/**/*.{css,scss,sass,vue}\"",
 		"lint:js": "eslint --ext .js src/js/",
-		"stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json"
+		"stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json",
+		"predeploy": "yarn build",
+		"deploy": "gh-pages -d dist"
 	},
 	"target": "web",
 	"dependencies": {
 		"@fancyapps/ui": "^5.0.16",
+		"gh-pages": "^6.2.0",
 		"slim-select": "^2.4.5",
 		"swiper": "^8.4.5"
 	}
