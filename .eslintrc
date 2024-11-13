@@ -1,0 +1,38 @@
+{
+	"extends": ["airbnb", "prettier"],
+	"env": {
+		"node": true,
+		"jasmine": true,
+		"jquery": true
+	},
+	"plugins": ["prettier"],
+	"rules": {
+		"no-use-before-define": 0,
+		"func-names": 0,
+		"prefer-arrow-callback": 0,
+		"no-var": 0,
+		//"max-len": 0, // максимальная длинна строки
+		"guard-for-in": 0,
+		"object-shorthand": 0,
+		"no-restricted-syntax": 0,
+		// Запрет определенных языковых функций
+		// "prefer-template": 0, // литералы шаблонов вместо конкатенации строк
+		"import/no-amd": 0,
+		// "space-before-function-paren": 0, // пробел перед скобками функции
+		"jsx-a11y/href-no-hash": "off",
+		"jsx-a11y/anchor-is-valid": [
+			"warn",
+			{
+				"aspects": ["invalidHref"]
+			}
+		],
+		"import/no-unresolved": 0,
+		"import/extensions": 0,
+		"no-new": 0
+	},
+	"globals": {
+		"browser": false,
+		"window": true,
+		"document": true
+	}
+}
