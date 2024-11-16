@@ -2,10 +2,20 @@ import Field from './fields';
 
 export default class Form {
 	constructor(form) {
+		if (!form) {
+			return;
+		}
+
+		this.names = {
+			error: '_error',
+		};
+
 		this.form = form;
+
 		this.fieldsSelectors = this.form.querySelectorAll(
 			'input[data-required], textarea[data-required], select[data-required], [data-required="radio"]'
 		);
+
 		this.fields = [];
 
 		this.init();
@@ -45,6 +55,9 @@ export default class Form {
 	onSubmit(e) {
 		if (!this.validationForm()) {
 			e.preventDefault();
+
+			this.form.classList.add(this.names.error);
+
 			return;
 		}
 	}

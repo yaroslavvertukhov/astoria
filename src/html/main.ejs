@@ -1,5 +1,5 @@
 <% 
-const header = require('./layouts/basic/header.ejs'); 
+const header = require('./layouts/basic/header-short.ejs'); 
 const footer = require('./layouts/basic/footer.ejs'); 
 %> 
 <%- header()-%>
@@ -57,8 +57,8 @@ const footer = require('./layouts/basic/footer.ejs');
                 </div>
                 <div class="intro__banner item-response">
                     <picture>
-                        <source media="(max-width: 767px)" srcset="images/content/intro-banner-mob.png">
-                        <img src="images/content/intro-banner.png" alt="">
+                        <source media="(max-width: 767px)" srcset="images/content/intro-banner-mob.jpg">
+                        <img src="images/content/intro-banner.jpg" alt="">
                     </picture>
                 </div>
             </div>
@@ -78,8 +78,8 @@ const footer = require('./layouts/basic/footer.ejs');
             <div class="grid">
                 <div class="grid__col">
                     <a href="#" class="card-grid">
-                        <div class="card-grid__img">
-                            <img src="images/content/grid-01.png" alt="">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-01.jpg" alt="">
                         </div>
                         <div class="card-grid__title fs-heading fw-500">Банкет для официального приема</div>
                         <div class="card-grid__text">12 000 рублей на человека</div>
@@ -87,8 +87,8 @@ const footer = require('./layouts/basic/footer.ejs');
                 </div>
                 <div class="grid__col">
                     <a href="#" class="card-grid">
-                        <div class="card-grid__img">
-                            <img src="images/content/grid-02.png" alt="">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-02.jpg" alt="">
                         </div>
                         <div class="card-grid__title fs-heading fw-500">Фуршет для «Центр национальных конных традиций»</div>
                         <div class="card-grid__text">12 000 рублей на человека</div>
@@ -96,8 +96,8 @@ const footer = require('./layouts/basic/footer.ejs');
                 </div>
                 <div class="grid__col">
                     <a href="#" class="card-grid">
-                        <div class="card-grid__img">
-                            <img src="images/content/grid-03.png" alt="">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-03.jpg" alt="">
                         </div>
                         <div class="card-grid__title fs-heading fw-500">Выездной банкет у реки</div>
                         <div class="card-grid__text">Выездной банкет у реки</div>
@@ -105,8 +105,8 @@ const footer = require('./layouts/basic/footer.ejs');
                 </div>
                 <div class="grid__col">
                     <a href="#" class="card-grid">
-                        <div class="card-grid__img">
-                            <img src="images/content/grid-04.png" alt="">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-04.jpg" alt="">
                         </div>
                         <div class="card-grid__title fs-heading fw-500">Выездной бар на Патриках</div>
                         <div class="card-grid__text">12 000 рублей на человека</div>
@@ -114,8 +114,8 @@ const footer = require('./layouts/basic/footer.ejs');
                 </div>
                 <div class="grid__col">
                     <a href="#" class="card-grid">
-                        <div class="card-grid__img">
-                            <img src="images/content/grid-05.png" alt="">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-05.jpg" alt="">
                         </div>
                         <div class="card-grid__title fs-heading fw-500">Выездной welcome-drink</div>
                         <div class="card-grid__text">12 000 рублей на человека</div>
@@ -128,8 +128,8 @@ const footer = require('./layouts/basic/footer.ejs');
     <section class="principles section pv-120">
         <div class="principles__bg">
             <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="images/content/principles-bg-mob.png">
-                <img src="images/content/principles-bg.png" alt="">
+                <source type="image/webp" media="(max-width: 767px)" srcset="images/content/principles-bg-mob.jpg">
+                <img src="images/content/principles-bg.jpg" alt="">
             </picture>
         </div>
         <div class="container">
@@ -157,8 +157,16 @@ const footer = require('./layouts/basic/footer.ejs');
             <div class="btns btns--center mb-16 mb-40-mob">
                 <button type="button" href="#popup-request" data-fancybox="popup-request" class="btn btn--primary btn--full-mob js-popup-trigger">Оставить заявку</button>
             </div>
-            <div class="partners__logo item-response">
-                <img src="images/content/partners-logo.png" alt="">
+            <div class="partners__logos">
+                <a href="#" class="partners__logo">
+                    <img src="images/content/partners-01.png" alt="">
+                </a>
+                <a href="#" class="partners__logo">
+                    <img src="images/content/partners-02.png" alt="">
+                </a>
+                <a href="#" class="partners__logo">
+                    <img src="images/content/partners-03.png" alt="">
+                </a>
             </div>
         </div>
     </section>

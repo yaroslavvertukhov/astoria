@@ -6,21 +6,12 @@ export default class Fancy {
 		this.popupSelector = '.js-popup-trigger[data-fancybox]';
 	}
 
-	foundTriggers() {
-		this.fancybox.bind(this.popupSelector, Fancy.getOptions());
+	init() {
+		this.foundTriggers();
 	}
 
-	static getOptions(backdropClick = 'close') {
-		return {
-			mainClass: 'js-popup',
-			groupAttr: false,
-			dragToClose: false,
-			autoFocus: false,
-			click: false,
-			backdropClick: backdropClick,
-			defaultType: 'html',
-			closeButton: false,
-		};
+	foundTriggers() {
+		this.fancybox.bind(this.popupSelector, Fancy.getOptions());
 	}
 
 	show(popupId, backdropClick) {
@@ -35,8 +26,17 @@ export default class Fancy {
 		}
 	}
 
-	init() {
-		this.foundTriggers();
+	static getOptions(backdropClick = 'close') {
+		return {
+			mainClass: 'js-popup',
+			groupAttr: false,
+			dragToClose: false,
+			autoFocus: false,
+			click: false,
+			backdropClick: backdropClick,
+			defaultType: 'html',
+			closeButton: false,
+		};
 	}
 }
 

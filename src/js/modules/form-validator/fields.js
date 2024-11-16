@@ -1,12 +1,21 @@
 class Field {
 	constructor(field, form) {
+		if (!field) {
+			return;
+		}
+
+		this.names = {
+			error: '_error',
+		};
+
 		this.field = field;
 		this.form = form;
-		this.label = this.field.closest('.js-input');
+
+		this.container = this.field.closest('.js-input');
 		this.radios = this.field.querySelectorAll('input[type="radio"]');
-		this.errorClass = '_error';
-		this.patternEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		
 		this.interaction = this.checkInteraction();
+		this.patternEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 		this.isFilled = false;
 
@@ -57,10 +66,12 @@ class Field {
 					}
 					break;
 				case 'tel':
+					console.log(this.field.value[this.field.value.length - 1]);
 					if (
 						this.field.value !== '' &&
-						this.field.value.indexOf('_') === -1 &&
-						!this.label.classList.contains(this.errorClass)
+						// this.field.value.indexOf('_') === -1 &&
+						this.field.value[this.field.value.length - 1] !== ' ' &&
+						!this.container.classList.contains(this.names.error)
 					) {
 						this.removeError();
 						return true;
@@ -108,16 +119,16 @@ class Field {
 	}
 
 	addError() {
-		this.label.classList.add(this.errorClass);
+		this.container.classList.add(this.names.error);
 	}
 
 	removeError() {
-		this.label.classList.remove(this.errorClass);
+		this.container.classList.remove(this.names.error);
 		this.isFilled = true;
 	}
 
 	checkInteraction() {
-		return this.label.hasAttribute('data-no-interaction');
+		return this.container.hasAttribute('data-no-interaction');
 	}
 
 	isRadioChecked() {

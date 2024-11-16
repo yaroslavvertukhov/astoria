@@ -1,18 +1,44 @@
 .form {
+	&._error{
+		.form__error{
+			display: block;
+		}
+	}
 	&__item {
 		margin-bottom: 16px;
 		&:last-child {
 			margin-bottom: 0;
 		}
 	}
-	&__bottom {
-		margin-top: 60px;
-		@media ($max767) {
-			margin-top: 44px;
+
+	&__box{
+		&.js-switch-types-box{
+			&._active{
+				padding: 12px;
+				border: solid 1px $grayOnDarkBorder;
+			}
 		}
+	}
+	&__error{
+		display: none;
+		color: $dangerOnDark;
+		margin-top: 24px;
+	}
+	&__bottom {
+		margin-top: 24px;
 	}
 }
 .field {
+	&._error {
+		.field{
+			&__error-icon{
+				opacity: 1;
+			}
+			&__error-text{
+				display: block;
+			}
+		}
+	}
 	&__box {
 		position: relative;
 	}
@@ -26,6 +52,7 @@
 		font-weight: 400;
 		color: $white;
 		background-color: transparent;
+		padding-right: 26px;
 		border-bottom: solid 1px $grayOnDarkBorder;
 		transition: all 0.3s;
 
@@ -67,6 +94,36 @@
 			font-size: 14px;
 		}
 	}
+
+	&__error-icon{
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		z-index: 1;
+		width: 16px;
+		height: 16px;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 0.3s;
+		svg{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__error-text{
+		display: none;
+		font-size: 13px;
+		line-height: 16px;
+		color: $dangerOnDark;
+		margin-top: 4px;
+	}
+}
+
+.title-radios{
+	position: relative;
+	display: inline-flex;
+	padding-right: 26px;
 }
 
 .radios {

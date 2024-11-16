@@ -28,12 +28,16 @@
 @import 'modules/common/header.scss';
 @import 'modules/common/footer.scss';
 @import 'modules/common/popup.scss';
+@import 'modules/common/tabs.scss';
 @import 'modules/common/form.scss';
 @import 'modules/common/intro.scss';
 @import 'modules/common/principles.scss';
 @import 'modules/common/partners.scss';
 @import 'modules/common/grid.scss';
 @import 'modules/common/request.scss';
+@import 'modules/common/history.scss';
+@import 'modules/common/values.scss';
+@import 'modules/common/team.scss';
 
 /* Browser specific styles */
 @import 'dirty/hacks';

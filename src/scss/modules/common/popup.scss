@@ -67,6 +67,10 @@
         }
     }
     &__bottom {
-        margin-top: 44px;
+        margin-top: 24px;
+        .form__error{
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
     }
 }

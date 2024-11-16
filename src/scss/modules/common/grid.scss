@@ -15,6 +15,11 @@
 				grid-column-start: 1;
 				grid-column-end: 2;
 			}
+			@media ($min1024) {
+				.card-grid__img:before {
+					padding-bottom: pct-s(400, 660);
+				}
+			}
 		}
 		&:nth-child(2),
 		&:nth-child(11n + 2) {
@@ -23,6 +28,11 @@
 			@media ($max1023) {
 				grid-column-start: 2;
 				grid-column-end: 3;
+			}
+			@media ($min1024) {
+				.card-grid__img:before {
+					padding-bottom: pct-s(414, 406);
+				}
 			}
 		}
 		&:nth-child(3),
@@ -33,6 +43,11 @@
 				grid-column-start: 1;
 				grid-column-end: 2;
 			}
+			@media ($min1024) {
+				.card-grid__img:before {
+					padding-bottom: pct-s(475, 457);
+				}
+			}
 		}
 		&:nth-child(4),
 		&:nth-child(11n + 4) {
@@ -41,6 +56,11 @@
 			@media ($max1023) {
 				grid-column-start: 2;
 				grid-column-end: 3;
+			}
+			@media ($min1024) {
+				.card-grid__img:before {
+					padding-bottom: pct-s(299,305);
+				}
 			}
 		}
 		&:nth-child(5),
@@ -51,6 +71,11 @@
 				grid-column-start: 1;
 				grid-column-end: 2;
 			}
+			@media ($min1024) {
+				.card-grid__img:before {
+					padding-bottom: pct-s(299,305);
+				}
+			}
 		}
 		&:nth-child(6),
 		&:nth-child(11n + 6) {
@@ -59,6 +84,11 @@
 			@media ($max1023) {
 				grid-column-start: 2;
 				grid-column-end: 3;
+			}
+			@media ($min1024) {
+				.card-grid__img:before {
+					padding-bottom: pct-s(299,305);
+				}
 			}
 		}
 		&:nth-child(7),
@@ -69,6 +99,11 @@
 				grid-column-start: 1;
 				grid-column-end: 2;
 			}
+			@media ($min1024) {
+				.card-grid__img:before {
+					padding-bottom: pct-s(475, 457);
+				}
+			}
 		}
 		&:nth-child(8),
 		&:nth-child(11n + 8) {
@@ -77,6 +112,11 @@
 			@media ($max1023) {
 				grid-column-start: 2;
 				grid-column-end: 3;
+			}
+			@media ($min1024) {
+				.card-grid__img:before {
+					padding-bottom: pct-s(299, 305);
+				}
 			}
 		}
 		&:nth-child(9),
@@ -87,6 +127,11 @@
 				grid-column-start: 1;
 				grid-column-end: 2;
 			}
+			@media ($min1024) {
+				.card-grid__img:before {
+					padding-bottom: pct-s(414, 406);
+				}
+			}
 		}
 		&:nth-child(10),
 		&:nth-child(11n + 10) {
@@ -95,6 +140,11 @@
 			@media ($max1023) {
 				grid-column-start: 2;
 				grid-column-end: 3;
+			}
+			@media ($min1024) {
+				.card-grid__img:before {
+					padding-bottom: pct-s(400, 660);
+				}
 			}
 		}
 		&:nth-child(11),
@@ -106,13 +156,10 @@
 				grid-column-end: 3;
 			}
 
-			.card-grid {
-				&__img {
-					&:before {
-						@media ($max1023) {
-							padding-bottom: pct-s(198, 328);
-						}
-					}
+			.card-grid__img:before {
+				padding-bottom: pct-s(613,1320);
+				@media ($max1023) {
+					padding-bottom: pct-s(198, 328);
 				}
 			}
 		}
@@ -139,21 +186,12 @@
 		@media ($max1023) {
 			position: relative;
 			&:before {
-				content: "";
-				display: block;
 				padding-bottom: pct-s(167, 158);
 			}
 		}
 		img {
-			width: 100%;
 			object-fit: cover;
 			transition: transform 0.3s;
-			@media ($max1023) {
-				position: absolute;
-				top: 0;
-				left: 0;
-				height: 100%;
-			}
 		}
 	}
 	&__title {
