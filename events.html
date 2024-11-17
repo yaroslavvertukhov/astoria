@@ -1,0 +1,1195 @@
+ 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Template</title>
+	<meta name="description" content="Template">
+	<meta name="keywords" content="Template">
+	<meta property="og:title" content="Template">
+	<meta property="og:description" content="Template">
+	<meta property="og:image" content="images/content/test.png">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+<link rel="icon" href="favicon.ico"><link href="css/app.css" rel="stylesheet"></head>
+<body>
+<div class="wrapper">
+	<header class="header js-header js-fixed-element">
+		<div class="container">
+			<div class="header__row">
+				<a href="#" class="header__logo">
+					<img src="images/content/logo.svg" alt="">
+				</a>
+				<div class="menu">
+					<nav class="menu__nav">
+						<ul>
+							<li class="_active">
+								<span>Главная</span>
+							</li>
+							<li>
+								<a href="#">О нас</a>
+							</li>
+							<li class="menu__line">
+								<a href="#">Заказчикам</a>
+							</li>
+							<li>
+								<a href="#">Эксклюзивный формат мероприятия</a>
+							</li>
+							<li>
+								<a href="#">Площадкам</a>
+							</li>
+							<li class="menu__line">
+								<a href="#">Мероприятия</a>
+							</li>
+							<li>
+								<a href="#">Меню</a>
+							</li>
+							<li>
+								<a href="#">Услуги</a>
+							</li>
+							<li>
+								<a href="#">Сервировка</a>
+							</li>
+							<li class="menu__line">
+								<a href="#">Блог</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<button type="button" data-show-on="1023" class="burger js-trigger-menu">
+					Меню
+					<div class="burger__icon">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 4C1.5 3.72386 1.72386 3.5 2 3.5H14C14.2761 3.5 14.5 3.72386 14.5 4C14.5 4.27614 14.2761 4.5 14 4.5H2C1.72386 4.5 1.5 4.27614 1.5 4ZM1.5 8C1.5 7.72386 1.72386 7.5 2 7.5H14C14.2761 7.5 14.5 7.72386 14.5 8C14.5 8.27614 14.2761 8.5 14 8.5H2C1.72386 8.5 1.5 8.27614 1.5 8ZM1.5 12C1.5 11.7239 1.72386 11.5 2 11.5H14C14.2761 11.5 14.5 11.7239 14.5 12C14.5 12.2761 14.2761 12.5 14 12.5H2C1.72386 12.5 1.5 12.2761 1.5 12Z" fill="#121212"/>
+						</svg>
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M3.64645 3.64645C3.84171 3.45118 4.15829 3.45118 4.35355 3.64645L8 7.29289L11.6464 3.64645C11.8417 3.45118 12.1583 3.45118 12.3536 3.64645C12.5488 3.84171 12.5488 4.15829 12.3536 4.35355L8.70711 8L12.3536 11.6464C12.5488 11.8417 12.5488 12.1583 12.3536 12.3536C12.1583 12.5488 11.8417 12.5488 11.6464 12.3536L8 8.70711L4.35355 12.3536C4.15829 12.5488 3.84171 12.5488 3.64645 12.3536C3.45118 12.1583 3.45118 11.8417 3.64645 11.6464L7.29289 8L3.64645 4.35355C3.45118 4.15829 3.45118 3.84171 3.64645 3.64645Z" fill="#121212"/>
+						</svg>
+					</div>
+				</button>
+			</div>
+		</div>
+	</header><main class="page">
+    <div class="filter section first-section-from-header js-filter">
+        <div class="container">
+            <button type="button" data-trigger class="filter__trigger">
+                Фильтр
+                <span data-count-total></span>
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 11C8.13261 11 8.25979 10.9473 8.35355 10.8536L12.3536 6.85355C12.5488 6.65829 12.5488 6.34171 12.3536 6.14645C12.1583 5.95118 11.8417 5.95118 11.6464 6.14645L8 9.79289L4.35355 6.14645C4.15829 5.95118 3.84171 5.95118 3.64645 6.14645C3.45118 6.34171 3.45118 6.65829 3.64645 6.85355L7.64645 10.8536C7.74021 10.9473 7.86739 11 8 11Z" fill="#121212"/>
+                </svg>
+            </button>
+            <div class="filter__wrapper">
+                <form action="#" method="#" class="filter__form">
+                    <button type="button" data-trigger class="filter__trigger">
+                        Фильтр
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.64645 4.14645C3.84171 3.95118 4.15829 3.95118 4.35355 4.14645L8 7.79289L11.6464 4.14645C11.8417 3.95118 12.1583 3.95118 12.3536 4.14645C12.5488 4.34171 12.5488 4.65829 12.3536 4.85355L8.70711 8.5L12.3536 12.1464C12.5488 12.3417 12.5488 12.6583 12.3536 12.8536C12.1583 13.0488 11.8417 13.0488 11.6464 12.8536L8 9.20711L4.35355 12.8536C4.15829 13.0488 3.84171 13.0488 3.64645 12.8536C3.45118 12.6583 3.45118 12.3417 3.64645 12.1464L7.29289 8.5L3.64645 4.85355C3.45118 4.65829 3.45118 4.34171 3.64645 4.14645Z" fill="#121212"/>
+                        </svg>
+                    </button>
+                    <div class="filter__body">
+                        <div class="filter__row">
+                            <div data-col class="filter__col">
+                                <button type="button" data-dd-trigger class="filter__title">
+                                    Формат
+                                    <span data-count="0" data-count-type="checkbox"></span>
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.33301 11C8.46562 11 8.59279 10.9473 8.68656 10.8536L12.6866 6.85355C12.8818 6.65829 12.8818 6.34171 12.6866 6.14645C12.4913 5.95118 12.1747 5.95118 11.9795 6.14645L8.33301 9.79289L4.68656 6.14645C4.4913 5.95118 4.17472 5.95118 3.97945 6.14645C3.78419 6.34171 3.78419 6.65829 3.97945 6.85355L7.97945 10.8536C8.07322 10.9473 8.2004 11 8.33301 11Z" fill="currentColor"/>
+                                    </svg>
+                                </button>
+                                <div class="filter__dropdown">
+                                    <div class="filter__list">
+                                        <label class="field-filter">
+                                            <input type="checkbox" data-input class="field-filter__input">
+                                            <span class="field-filter__text">
+                                                <span>Фуршет</span>
+                                                <span class="field-filter__body">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                        <label class="field-filter">
+                                            <input type="checkbox" data-input class="field-filter__input">
+                                            <span class="field-filter__text">
+                                                <span>Шведский стол</span>
+                                                <span class="field-filter__body">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                        <label class="field-filter">
+                                            <input type="checkbox" data-input class="field-filter__input">
+                                            <span class="field-filter__text">
+                                                <span>Банкет</span>
+                                                <span class="field-filter__body">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                        <label class="field-filter">
+                                            <input type="checkbox" data-input class="field-filter__input">
+                                            <span class="field-filter__text">
+                                                <span>Коктейл-пати</span>
+                                                <span class="field-filter__body">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-col class="filter__col">
+                                <button type="button" data-dd-trigger class="filter__title">
+                                    Тип
+                                    <span data-count="0" data-count-type="checkbox"></span>
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.33301 11C8.46562 11 8.59279 10.9473 8.68656 10.8536L12.6866 6.85355C12.8818 6.65829 12.8818 6.34171 12.6866 6.14645C12.4913 5.95118 12.1747 5.95118 11.9795 6.14645L8.33301 9.79289L4.68656 6.14645C4.4913 5.95118 4.17472 5.95118 3.97945 6.14645C3.78419 6.34171 3.78419 6.65829 3.97945 6.85355L7.97945 10.8536C8.07322 10.9473 8.2004 11 8.33301 11Z" fill="currentColor"/>
+                                    </svg>
+                                </button>
+                                <div class="filter__dropdown">
+                                    <div class="filter__list">
+                                        <label class="field-filter">
+                                            <input type="checkbox" data-input class="field-filter__input">
+                                            <span class="field-filter__text">
+                                                <span>Свадьба</span>
+                                                <span class="field-filter__body">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                        <label class="field-filter">
+                                            <input type="checkbox" data-input class="field-filter__input">
+                                            <span class="field-filter__text">
+                                                <span>Корпоратив</span>
+                                                <span class="field-filter__body">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                        <label class="field-filter">
+                                            <input type="checkbox" data-input class="field-filter__input">
+                                            <span class="field-filter__text">
+                                                <span>День рождения</span>
+                                                <span class="field-filter__body">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-col class="filter__col">
+                                <button type="button" data-dd-trigger class="filter__title">
+                                    Кол-во гостей
+                                    <span data-count="0" data-count-type="radio"></span>
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.33301 11C8.46562 11 8.59279 10.9473 8.68656 10.8536L12.6866 6.85355C12.8818 6.65829 12.8818 6.34171 12.6866 6.14645C12.4913 5.95118 12.1747 5.95118 11.9795 6.14645L8.33301 9.79289L4.68656 6.14645C4.4913 5.95118 4.17472 5.95118 3.97945 6.14645C3.78419 6.34171 3.78419 6.65829 3.97945 6.85355L7.97945 10.8536C8.07322 10.9473 8.2004 11 8.33301 11Z" fill="currentColor"/>
+                                    </svg>
+                                </button>
+                                <div class="filter__dropdown">
+                                    <div class="filter__list">
+                                        <label class="field-filter">
+                                            <input type="radio" data-input name="filter-radio-1" class="field-filter__input">
+                                            <span class="field-filter__text">
+                                                <span data-text>0–50</span>
+                                                <span class="field-filter__body">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                        <label class="field-filter">
+                                            <input type="radio" data-input name="filter-radio-1" class="field-filter__input">
+                                            <span class="field-filter__text">
+                                                <span data-text>50–100</span>
+                                                <span class="field-filter__body">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                        <label class="field-filter">
+                                            <input type="radio" data-input name="filter-radio-1" class="field-filter__input">
+                                            <span class="field-filter__text">
+                                                <span data-text>100–200</span>
+                                                <span class="field-filter__body">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                        <label class="field-filter">
+                                            <input type="radio" data-input name="filter-radio-1" class="field-filter__input">
+                                            <span class="field-filter__text">
+                                                <span data-text>200–500</span>
+                                                <span class="field-filter__body">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__bottom">
+                        <input type="submit" class="btn btn--primary btn--full" value="Показать мероприятия"></input>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section class="section pb-60">
+        <div class="container">
+            <div class="grid">
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-01.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Банкет для официального приема</div>
+                        <div class="card-grid__text">12 000 рублей на человека</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-02.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Фуршет для «Центр национальных конных традиций»</div>
+                        <div class="card-grid__text">12 000 рублей на человека</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-03.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Выездной банкет у реки</div>
+                        <div class="card-grid__text">Выездной банкет у реки</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-04.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Выездной бар на Патриках</div>
+                        <div class="card-grid__text">12 000 рублей на человека</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-05.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Выездной welcome-drink</div>
+                        <div class="card-grid__text">12 000 рублей на человека</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-01.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Банкет для официального приема</div>
+                        <div class="card-grid__text">12 000 рублей на человека</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-02.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Фуршет для «Центр национальных конных традиций»</div>
+                        <div class="card-grid__text">12 000 рублей на человека</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-03.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Выездной банкет у реки</div>
+                        <div class="card-grid__text">Выездной банкет у реки</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-04.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Выездной бар на Патриках</div>
+                        <div class="card-grid__text">12 000 рублей на человека</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-05.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Выездной welcome-drink</div>
+                        <div class="card-grid__text">12 000 рублей на человека</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-06.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Фуршет для «Центр национальных конных традиций»</div>
+                        <div class="card-grid__text">12 000 рублей на человека</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-01.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Банкет для официального приема</div>
+                        <div class="card-grid__text">12 000 рублей на человека</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-02.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Фуршет для «Центр национальных конных традиций»</div>
+                        <div class="card-grid__text">12 000 рублей на человека</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-03.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Выездной банкет у реки</div>
+                        <div class="card-grid__text">Выездной банкет у реки</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-04.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Выездной бар на Патриках</div>
+                        <div class="card-grid__text">12 000 рублей на человека</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-05.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Выездной welcome-drink</div>
+                        <div class="card-grid__text">12 000 рублей на человека</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-01.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Банкет для официального приема</div>
+                        <div class="card-grid__text">12 000 рублей на человека</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-02.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Фуршет для «Центр национальных конных традиций»</div>
+                        <div class="card-grid__text">12 000 рублей на человека</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-03.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Выездной банкет у реки</div>
+                        <div class="card-grid__text">Выездной банкет у реки</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-04.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Выездной бар на Патриках</div>
+                        <div class="card-grid__text">12 000 рублей на человека</div>
+                    </a>
+                </div>
+                <div class="grid__col">
+                    <a href="#" class="card-grid">
+                        <div class="card-grid__img item-response">
+                            <img src="images/content/grid-05.jpg" alt="">
+                        </div>
+                        <div class="card-grid__title fs-heading fw-500">Выездной welcome-drink</div>
+                        <div class="card-grid__text">12 000 рублей на человека</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+    </main>
+
+    <section class="request section bg-black c-white pv-120">
+        <div class="container">
+            <div class="request__row">
+                <div class="request__col">
+                    <div class="request__head">
+                        <h2 class="fs-display mb-8 mb-4-mob">Оставьте заявку</h2>
+                        <p>Мы перезвоним вам для обсуждения деталей</p>
+                    </div>
+                </div>
+                <div class="request__col">
+                    <form action="#" method="#" class="request__form form js-form">
+                        <div class="form__body">
+                            <div class="form__item">
+                                <div class="field js-input">
+                                    <div class="field__box">
+                                        <input type="text" placeholder=" " class="field__input" data-required="text">
+                                        <div class="field__placeholder">Имя</div>
+                                        <div class="field__error-icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="field__error-text">
+                                        Текст ошибки
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__item js-switch-types">
+                                <div class="form__item">
+                                    <div class="field js-input">
+                                        <div data-required="radio">
+                                            <div class="title-radios">
+                                                <div class="pt-12 mb-8">Как с вами связаться?</div>
+                                                <div class="field__error-icon">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="radios">
+                                                <div class="radios__row">
+                                                    <label class="radio">
+                                                        <input type="radio" name="footer-radio-1" data-switch-type="phone" class="radio__input" checked>
+                                                        <span class="radio__body"></span>
+                                                        <span class="radio__text">Телефон</span>
+                                                    </label>
+                                                    <label class="radio">
+                                                        <input type="radio" name="footer-radio-1" data-switch-type="whatsapp" class="radio__input">
+                                                        <span class="radio__body"></span>
+                                                        <span class="radio__text">WhatsApp</span>
+                                                    </label>
+                                                    <label class="radio">
+                                                        <input type="radio" name="footer-radio-1" data-switch-type="telegram" class="radio__input">
+                                                        <span class="radio__body"></span>
+                                                        <span class="radio__text">Telegram</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__item">
+                                    <div class="form__box js-switch-types-box">
+                                        <div data-switch-block="telegram" class="form__item">
+                                            <div class="radios">
+                                                <div class="radios__row">
+                                                    <label class="radio">
+                                                        <input type="radio" name="footer-radio-2" data-switch-type="telegram-tel" class="radio__input" checked>
+                                                        <span class="radio__body"></span>
+                                                        <span class="radio__text">Номер</span>
+                                                    </label>
+                                                    <label class="radio">
+                                                        <input type="radio" name="footer-radio-2" data-switch-type="telegram-name" class="radio__input">
+                                                        <span class="radio__body"></span>
+                                                        <span class="radio__text">Имя</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form__item">
+                                            <div data-switch-block="telegram-tel" class="field js-input">
+                                                <div class="field__box">
+                                                    <input type="text" placeholder=" " class="field__input js-mask-phone" data-mask="+7 000 000 00 00" data-required="tel">
+                                                    <div class="field__placeholder">Номер телефона</div>
+                                                    <div class="field__error-icon">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="field__error-text">
+                                                    Неверный номер
+                                                </div>
+                                            </div>
+                                            <div data-switch-block="telegram-name" class="field js-input">
+                                                <div class="field__box">
+                                                    <input type="text" placeholder=" " class="field__input" data-required="text">
+                                                    <div class="field__placeholder">Имя пользователя</div>
+                                                    <div class="field__error-icon">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="field__error-text">
+                                                    Текст ошибки
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__item">
+                                <div class="field">
+                                    <div class="field__box">
+                                        <input type="text" placeholder=" " class="field__input">
+                                        <div class="field__placeholder">Дата мероприятия</div>
+                                        <div class="field__error-icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="field__error-text">
+                                        Текст ошибки
+                                    </div>
+                                </div>
+                                <div class="mt-8">
+                                    <label class="checkbox">
+                                        <input type="checkbox" class="checkbox__input">
+                                        <span class="checkbox__body"></span>
+                                        <span class="checkbox__text">Еще не определились</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__item">
+                                <div class="field js-input">
+                                    <div data-required="radio">
+                                        <div class="title-radios">
+                                            <div class="pt-12 mb-8">Формат мероприятия</div>
+                                            <div class="field__error-icon">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="radios">
+                                            <div class="radios__row">
+                                                <label class="radio">
+                                                    <input type="radio" name="footer-radio-3" class="radio__input" checked>
+                                                    <span class="radio__body"></span>
+                                                    <span class="radio__text">Фуршет</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="footer-radio-3" class="radio__input">
+                                                    <span class="radio__body"></span>
+                                                    <span class="radio__text">Шведский стол</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="footer-radio-3" class="radio__input">
+                                                    <span class="radio__body"></span>
+                                                    <span class="radio__text">Банкет</span>
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="footer-radio-3" class="radio__input">
+                                                    <span class="radio__body"></span>
+                                                    <span class="radio__text">Коктейл-пати</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__item">
+                                <div class="field">
+                                    <div class="field__box">
+                                        <input type="text" placeholder=" " class="field__input">
+                                        <div class="field__placeholder">Сколько будет гостей?</div>
+                                        <div class="field__error-icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="field__error-text">
+                                        Текст ошибки
+                                    </div>
+                                </div>
+                                <div class="mt-8">
+                                    <label class="checkbox">
+                                        <input type="checkbox" class="checkbox__input">
+                                        <span class="checkbox__body"></span>
+                                        <span class="checkbox__text">Еще не определились</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form__error">
+                                Чтобы отправить заявку, нужно заполнить все поля
+                            </div>
+                        </div>
+                        <div class="form__bottom">
+                            <input type="submit" class="btn btn--white btn--full" value="Отправить заявку"></input>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer bg-black c-white">
+        <div class="container">
+            <div class="footer__row">
+                <div data-area="nav" class="footer__col">
+                    <div class="footer__nav">
+                        <ul>
+                            <li>
+                                <a href="#">О нас</a>
+                            </li>
+                            <li>
+                                <a href="#">Мероприятия</a>
+                            </li>
+                            <li>
+                                <a href="#">Меню</a>
+                            </li>
+                            <li>
+                                <a href="#">Услуги</a>
+                            </li>
+                            <li>
+                                <a href="#">Сервировка</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">Заказчикам</a>
+                            </li>
+                            <li>
+                                <a href="#">Эксклюзивный формат мероприятия</a>
+                            </li>
+                            <li>
+                                <a href="#">Площадкам</a>
+                            </li>
+                            <li>
+                                <a href="#">Площадкам</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div data-area="info" class="footer__col">
+                    <div class="footer__info">
+                        <p>ООО «Астория»</p>
+                        <p>г. Москва, Проспект Мира, 119, 42 павильон</p>
+                        <p>ОГРН 1167746068896</p>
+                    </div>
+                </div>
+                <div data-area="contacts" class="footer__col">
+                    <div class="footer__contacts">
+                        <ul>
+                            <li>
+                                <a href="#">+7 (495) 066–72–92</a>
+                            </li>
+                            <li>
+                                <a href="#">sale@astoriagroup.ru</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div data-area="logo" class="footer__col">
+                    <a href="#" class="footer__logo">
+                        <img src="images/content/logo-footer.svg" alt="">
+                    </a>
+                </div>
+                <div data-area="socials" class="footer__col">
+                    <div class="footer__socials">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="images/content/icons/telegram.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/content/icons/whatsapp.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/content/icons/youtube.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<div id="popup-request" class="request bg-black c-white popup js-popup">
+    <button type="button" class="popup__close" onclick="window.popup.close()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.64645 5.64645C5.84171 5.45118 6.15829 5.45118 6.35355 5.64645L12 11.2929L17.6464 5.64645C17.8417 5.45118 18.1583 5.45118 18.3536 5.64645C18.5488 5.84171 18.5488 6.15829 18.3536 6.35355L12.7071 12L18.3536 17.6464C18.5488 17.8417 18.5488 18.1583 18.3536 18.3536C18.1583 18.5488 17.8417 18.5488 17.6464 18.3536L12 12.7071L6.35355 18.3536C6.15829 18.5488 5.84171 18.5488 5.64645 18.3536C5.45118 18.1583 5.45118 17.8417 5.64645 17.6464L11.2929 12L5.64645 6.35355C5.45118 6.15829 5.45118 5.84171 5.64645 5.64645Z" fill="white"/>
+        </svg>
+    </button>
+    <form action="#" method="#" class="popup__wrapper request__form form js-form">
+        <div class="popup__head">
+            <h2 class="fs-display mb-8 mb-4-mob">Оставьте заявку</h2>
+            <p>Мы перезвоним вам для обсуждения деталей</p>
+        </div>
+        <div class="popup__body">
+            <div class="form__body">
+                <div class="form__item">
+                    <div class="field js-input">
+                        <div class="field__box">
+                            <input type="text" placeholder=" " class="field__input" data-required="text">
+                            <div class="field__placeholder">Имя</div>
+                            <div class="field__error-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="field__error-text">
+                            Текст ошибки
+                        </div>
+                    </div>
+                </div>
+                <div class="form__item js-switch-types">
+                    <div class="form__item">
+                        <div class="field js-input">
+                            <div data-required="radio">
+                                <div class="title-radios">
+                                    <div class="pt-12 mb-8">Как с вами связаться?</div>
+                                    <div class="field__error-icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="radios">
+                                    <div class="radios__row">
+                                        <label class="radio">
+                                            <input type="radio" name="footer-radio-1" data-switch-type="phone" class="radio__input" checked>
+                                            <span class="radio__body"></span>
+                                            <span class="radio__text">Телефон</span>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="footer-radio-1" data-switch-type="whatsapp" class="radio__input">
+                                            <span class="radio__body"></span>
+                                            <span class="radio__text">WhatsApp</span>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="footer-radio-1" data-switch-type="telegram" class="radio__input">
+                                            <span class="radio__body"></span>
+                                            <span class="radio__text">Telegram</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <div class="form__box js-switch-types-box">
+                            <div data-switch-block="telegram" class="form__item">
+                                <div class="radios">
+                                    <div class="radios__row">
+                                        <label class="radio">
+                                            <input type="radio" name="footer-radio-2" data-switch-type="telegram-tel" class="radio__input" checked>
+                                            <span class="radio__body"></span>
+                                            <span class="radio__text">Номер</span>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="footer-radio-2" data-switch-type="telegram-name" class="radio__input">
+                                            <span class="radio__body"></span>
+                                            <span class="radio__text">Имя</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__item">
+                                <div data-switch-block="telegram-tel" class="field js-input">
+                                    <div class="field__box">
+                                        <input type="text" placeholder=" " class="field__input js-mask-phone" data-mask="+7 000 000 00 00" data-required="tel">
+                                        <div class="field__placeholder">Номер телефона</div>
+                                        <div class="field__error-icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="field__error-text">
+                                        Неверный номер
+                                    </div>
+                                </div>
+                                <div data-switch-block="telegram-name" class="field js-input">
+                                    <div class="field__box">
+                                        <input type="text" placeholder=" " class="field__input" data-required="text">
+                                        <div class="field__placeholder">Имя пользователя</div>
+                                        <div class="field__error-icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="field__error-text">
+                                        Текст ошибки
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="field">
+                        <div class="field__box">
+                            <input type="text" placeholder=" " class="field__input">
+                            <div class="field__placeholder">Дата мероприятия</div>
+                            <div class="field__error-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="field__error-text">
+                            Текст ошибки
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input">
+                            <span class="checkbox__body"></span>
+                            <span class="checkbox__text">Еще не определились</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="field js-input">
+                        <div data-required="radio">
+                            <div class="title-radios">
+                                <div class="pt-12 mb-8">Формат мероприятия</div>
+                                <div class="field__error-icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="radios">
+                                <div class="radios__row">
+                                    <label class="radio">
+                                        <input type="radio" name="footer-radio-3" class="radio__input" checked>
+                                        <span class="radio__body"></span>
+                                        <span class="radio__text">Фуршет</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="footer-radio-3" class="radio__input">
+                                        <span class="radio__body"></span>
+                                        <span class="radio__text">Шведский стол</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="footer-radio-3" class="radio__input">
+                                        <span class="radio__body"></span>
+                                        <span class="radio__text">Банкет</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="footer-radio-3" class="radio__input">
+                                        <span class="radio__body"></span>
+                                        <span class="radio__text">Коктейл-пати</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="field">
+                        <div class="field__box">
+                            <input type="text" placeholder=" " class="field__input">
+                            <div class="field__placeholder">Сколько будет гостей?</div>
+                            <div class="field__error-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="field__error-text">
+                            Текст ошибки
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input">
+                            <span class="checkbox__body"></span>
+                            <span class="checkbox__text">Еще не определились</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup__bottom">
+            <div class="form__error">
+                Чтобы отправить заявку, нужно заполнить все поля
+            </div>
+            <input type="submit" class="btn btn--white btn--full" value="Отправить заявку"></input>
+        </div>
+    </form>
+</div>
+
+<div id="popup-request-tasting" class="request bg-black c-white popup js-popup">
+    <button type="button" class="popup__close" onclick="window.popup.close()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.64645 5.64645C5.84171 5.45118 6.15829 5.45118 6.35355 5.64645L12 11.2929L17.6464 5.64645C17.8417 5.45118 18.1583 5.45118 18.3536 5.64645C18.5488 5.84171 18.5488 6.15829 18.3536 6.35355L12.7071 12L18.3536 17.6464C18.5488 17.8417 18.5488 18.1583 18.3536 18.3536C18.1583 18.5488 17.8417 18.5488 17.6464 18.3536L12 12.7071L6.35355 18.3536C6.15829 18.5488 5.84171 18.5488 5.64645 18.3536C5.45118 18.1583 5.45118 17.8417 5.64645 17.6464L11.2929 12L5.64645 6.35355C5.45118 6.15829 5.45118 5.84171 5.64645 5.64645Z" fill="white"/>
+        </svg>
+    </button>
+    <form action="#" method="#" class="popup__wrapper request__form form js-form">
+        <div class="popup__head">
+            <h2 class="fs-display mb-8 mb-4-mob">Заявка на дегустацию</h2>
+            <p>Мы перезвоним вам для обсуждения деталей</p>
+        </div>
+        <div class="popup__body">
+            <div class="form__body">
+                <div class="form__item">
+                    <div class="field js-input">
+                        <div class="field__box">
+                            <input type="text" placeholder=" " class="field__input" data-required="text">
+                            <div class="field__placeholder">Имя</div>
+                            <div class="field__error-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="field__error-text">
+                            Текст ошибки
+                        </div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="field js-input">
+                        <div class="field__box">
+                            <input type="text" placeholder=" " class="field__input" data-required="text">
+                            <div class="field__placeholder">Название вашей организации</div>
+                            <div class="field__error-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="field__error-text">
+                            Текст ошибки
+                        </div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="field">
+                        <div class="field__box">
+                            <input type="text" placeholder=" " class="field__input">
+                            <div class="field__placeholder">Дата мероприятия</div>
+                            <div class="field__error-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="field__error-text">
+                            Текст ошибки
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input">
+                            <span class="checkbox__body"></span>
+                            <span class="checkbox__text">Еще не определились</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="field js-input">
+                        <div class="field__box">
+                            <input type="text" placeholder=" " class="field__input" data-required="text">
+                            <div class="field__placeholder">Сколько будет гостей?</div>
+                            <div class="field__error-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="field__error-text">
+                            Текст ошибки
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input">
+                            <span class="checkbox__body"></span>
+                            <span class="checkbox__text">Еще не определились</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="field js-input">
+                        <div data-required="radio">
+                            <div class="title-radios">
+                                <div class="pt-12 mb-8">Формат мероприятия</div>
+                                <div class="field__error-icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="radios">
+                                <div class="radios__row">
+                                    <label class="radio">
+                                        <input type="radio" name="footer-radio-3" class="radio__input" checked>
+                                        <span class="radio__body"></span>
+                                        <span class="radio__text">Фуршет</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="footer-radio-3" class="radio__input">
+                                        <span class="radio__body"></span>
+                                        <span class="radio__text">Шведский стол</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="footer-radio-3" class="radio__input">
+                                        <span class="radio__body"></span>
+                                        <span class="radio__text">Банкет</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="footer-radio-3" class="radio__input">
+                                        <span class="radio__body"></span>
+                                        <span class="radio__text">Коктейл-пати</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__item js-switch-types">
+                    <div class="form__item">
+                        <div class="field js-input">
+                            <div data-required="radio">
+                                <div class="title-radios">
+                                    <div class="pt-12 mb-8">Как с вами связаться?</div>
+                                    <div class="field__error-icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="radios">
+                                    <div class="radios__row">
+                                        <label class="radio">
+                                            <input type="radio" name="footer-radio-1" data-switch-type="phone" class="radio__input" checked>
+                                            <span class="radio__body"></span>
+                                            <span class="radio__text">Телефон</span>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="footer-radio-1" data-switch-type="whatsapp" class="radio__input">
+                                            <span class="radio__body"></span>
+                                            <span class="radio__text">WhatsApp</span>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="footer-radio-1" data-switch-type="telegram" class="radio__input">
+                                            <span class="radio__body"></span>
+                                            <span class="radio__text">Telegram</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <div class="form__box js-switch-types-box">
+                            <div data-switch-block="telegram" class="form__item">
+                                <div class="radios">
+                                    <div class="radios__row">
+                                        <label class="radio">
+                                            <input type="radio" name="footer-radio-2" data-switch-type="telegram-tel" class="radio__input" checked>
+                                            <span class="radio__body"></span>
+                                            <span class="radio__text">Номер</span>
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="footer-radio-2" data-switch-type="telegram-name" class="radio__input">
+                                            <span class="radio__body"></span>
+                                            <span class="radio__text">Имя</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__item">
+                                <div data-switch-block="telegram-tel" class="field js-input">
+                                    <div class="field__box">
+                                        <input type="text" placeholder=" " class="field__input js-mask-phone" data-mask="+7 000 000 00 00" data-required="tel">
+                                        <div class="field__placeholder">Номер телефона</div>
+                                        <div class="field__error-icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="field__error-text">
+                                        Неверный номер
+                                    </div>
+                                </div>
+                                <div data-switch-block="telegram-name" class="field js-input">
+                                    <div class="field__box">
+                                        <input type="text" placeholder=" " class="field__input" data-required="text">
+                                        <div class="field__placeholder">Имя пользователя</div>
+                                        <div class="field__error-icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39062 2.28626C7.08255 0.997804 8.93057 0.998467 9.62157 2.28742L14.7216 11.8007C15.3764 13.022 14.4916 14.5002 13.1058 14.5002H2.89692C1.51058 14.5002 0.625852 13.0209 1.28175 11.7995L6.39062 2.28626ZM8.74023 2.75991C8.42614 2.17402 7.58613 2.17372 7.27162 2.75938L2.16275 12.2726C1.86462 12.8278 2.26676 13.5002 2.89692 13.5002H13.1058C13.7357 13.5002 14.1379 12.8283 13.8403 12.2732L8.74023 2.75991ZM8.00013 5.50024C8.27628 5.50024 8.50013 5.7241 8.50013 6.00024V8.66691C8.50013 8.94305 8.27628 9.16691 8.00013 9.16691C7.72399 9.16691 7.50013 8.94305 7.50013 8.66691V6.00024C7.50013 5.7241 7.72399 5.50024 8.00013 5.50024ZM7.50013 11.3336C7.50013 11.0574 7.72399 10.8336 8.00013 10.8336H8.0068C8.28294 10.8336 8.5068 11.0574 8.5068 11.3336C8.5068 11.6097 8.28294 11.8336 8.0068 11.8336H8.00013C7.72399 11.8336 7.50013 11.6097 7.50013 11.3336Z" fill="#EB4747"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="field__error-text">
+                                        Текст ошибки
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup__bottom">
+            <div class="form__error">
+                Чтобы записаться на дегустацию, нужно заполнить все поля
+            </div>
+            <input type="submit" class="btn btn--white btn--full" value="Записаться на дегустацию"></input>
+        </div>
+    </form>
+</div><script defer src="js/app.js"></script></body>
+</html>
