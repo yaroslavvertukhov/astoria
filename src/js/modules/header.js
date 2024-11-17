@@ -53,7 +53,7 @@ export default class Header {
 	onClick() {
 		this.header.classList.toggle(this.data.menuOpen);
 
-		if (this.isOpen) {
+		if (this.isOpen || this.isFilterOpen) {
 			window.bodyLock.lock();
 		} else {
 			window.bodyLock.unlock();
@@ -69,6 +69,11 @@ export default class Header {
 
 	get isOpen() {
 		return this.header.classList.contains(this.data.menuOpen);
+	}
+
+	get isFilterOpen() {
+		const filter = document.querySelector('.js-filter');
+		return filter && filter.instanceFilter.isOpen;
 	}
 }
 

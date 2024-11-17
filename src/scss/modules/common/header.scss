@@ -162,10 +162,12 @@
 }
 
 .burger {
+	z-index: 11;
+	align-self: center;
 	display: inline-flex;
 	align-items: center;
 	gap: 4px;
-	z-index: 11;
+	height: 20px;
 	margin-left: auto;
 	@media ($min1024) {
 		display: none;
