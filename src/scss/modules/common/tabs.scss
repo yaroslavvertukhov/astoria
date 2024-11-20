@@ -1,71 +1,71 @@
 .js-tabs {
-    &-trigger {
-        &._active {
-            pointer-events: none;
-            cursor: default;
-        }
-        * {
-            pointer-events: none;
-        }
-    }
+	&-trigger {
+		&._active {
+			pointer-events: none;
+			cursor: default;
+		}
+		* {
+			pointer-events: none;
+		}
+	}
 
-    &-block {
-        display: none;
-        &._active {
-            display: block;
-        }
-        &._opening {
-            animation: openingTabMobile both;
-            @media ($min768) {
-                animation: openingTab both;
-            }
-        }
+	&-block {
+		display: none;
+		&._active {
+			display: block;
+		}
+		&._opening {
+			animation: openingTabMobile both;
+			@media ($min768) {
+				animation: openingTab both;
+			}
+		}
 
-        &._closing {
-            animation: closingTabMobile both;
-            @media ($min768) {
-                animation: closingTab both;
-            }
-        }
-    }
+		&._closing {
+			animation: closingTabMobile both;
+			@media ($min768) {
+				animation: closingTab both;
+			}
+		}
+	}
 }
 
 @keyframes openingTab {
-    from {
-        opacity: 0;
-        transform: translateY(100px);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
+	from {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
 }
 
 @keyframes closingTab {
-    from {
-        opacity: 1;
-        transform: none;
-    }
-    to {
-        opacity: 0;
-        // transform: translateX(150px);
-    }
+	from {
+		opacity: 1;
+		transform: none;
+	}
+	to {
+		opacity: 0;
+		// transform: translateX(150px);
+	}
 }
 
 @keyframes openingTabMobile {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes closingTabMobile {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
 }

@@ -1,26 +1,26 @@
 .partners {
-    @media ($max767) {
-        margin-top: 50px;
-        margin-bottom: 10px;
-    }
-    &__logos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-        width: 100%;
-        max-width: 1010px;
-        margin: 0 auto;
-        @media ($max767){
-            gap: 20px;
-        }
-    }
-    &__logo{
-        display: flex;
-        max-height: 280px;
-        filter: grayscale(1);
-        // &:before {
-        //     padding-bottom: pct-s(280, 1010);
-        // }
-    }
+	@media ($max767) {
+		margin-top: 50px;
+		margin-bottom: 10px;
+	}
+	&__logos {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 40px;
+		width: 100%;
+		max-width: 1010px;
+		margin: 0 auto;
+		@media ($max767) {
+			gap: 20px;
+		}
+	}
+	&__logo {
+		display: flex;
+		max-height: 280px;
+		filter: grayscale(1);
+		// &:before {
+		//     padding-bottom: pct-s(280, 1010);
+		// }
+	}
 }

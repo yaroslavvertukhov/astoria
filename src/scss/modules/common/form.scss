@@ -1,6 +1,6 @@
 .form {
-	&._error{
-		.form__error{
+	&._error {
+		.form__error {
 			display: block;
 		}
 	}
@@ -11,15 +11,15 @@
 		}
 	}
 
-	&__box{
-		&.js-switch-types-box{
-			&._active{
+	&__box {
+		&.js-switch-types-box {
+			&._active {
 				padding: 12px;
 				border: solid 1px $grayOnDarkBorder;
 			}
 		}
 	}
-	&__error{
+	&__error {
 		display: none;
 		color: $dangerOnDark;
 		margin-top: 24px;
@@ -30,11 +30,11 @@
 }
 .field {
 	&._error {
-		.field{
-			&__error-icon{
+		.field {
+			&__error-icon {
 				opacity: 1;
 			}
-			&__error-text{
+			&__error-text {
 				display: block;
 			}
 		}
@@ -62,8 +62,15 @@
 		}
 
 		@media ($hover) {
-			&:hover {
+			&:hover:not([disabled]) {
 				border-color: $white;
+			}
+		}
+
+		&[disabled] {
+			color: rgba($white,0.5);
+			~ .field__placeholder{
+				opacity: 0.5;
 			}
 		}
 
@@ -95,7 +102,7 @@
 		}
 	}
 
-	&__error-icon{
+	&__error-icon {
 		position: absolute;
 		top: 50%;
 		right: 0;
@@ -106,12 +113,12 @@
 		opacity: 0;
 		pointer-events: none;
 		transition: opacity 0.3s;
-		svg{
+		svg {
 			width: 100%;
 			height: 100%;
 		}
 	}
-	&__error-text{
+	&__error-text {
 		display: none;
 		font-size: 13px;
 		line-height: 16px;
@@ -120,7 +127,7 @@
 	}
 }
 
-.title-radios{
+.title-radios {
 	position: relative;
 	display: inline-flex;
 	padding-right: 26px;
@@ -177,7 +184,7 @@
 		background-color: $grayOnDarkBorder;
 		margin-top: 2px;
 		&:before {
-			content: "";
+			content: '';
 			position: absolute;
 			display: block;
 			width: 8px;
@@ -229,7 +236,7 @@
 		background-color: $grayOnDarkBorder;
 		margin-top: 2px;
 		&:before {
-			content: "";
+			content: '';
 			position: absolute;
 			display: block;
 			width: 8px;

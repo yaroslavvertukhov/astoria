@@ -8,6 +8,8 @@ import { initHeader } from './modules/header';
 import { initPhoneMasks } from './modules/inputMask';
 import { initSwitchTypes } from './modules/switchTypes';
 import { initTabs } from './modules/tabs';
+import { initOtherEventsSlider } from './modules/sliders/otherEvents';
+import { initNavigationCatalog } from './modules/sliders/navigationCatalog';
 
 function initModules() {
 	initBodyLock();
@@ -18,6 +20,8 @@ function initModules() {
 	initPhoneMasks();
 	initTabs();
 	initFilter();
+	initOtherEventsSlider();
+	initNavigationCatalog();
 }
 
 document.addEventListener('DOMContentLoaded', initModules);

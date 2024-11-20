@@ -1,5 +1,5 @@
-html.with-fancybox{
-	.header{
+html.with-fancybox {
+	.header {
 		padding-right: var(--fancybox-scrollbar-compensate);
 	}
 }
@@ -8,15 +8,15 @@ body {
 	color: $black;
 	font-family: $ff;
 	font-size: 16px;
-	line-height: 20px;
+	line-height: (20/16);
 	font-weight: 400;
 	overflow-x: hidden;
 	overflow-y: auto;
-	@media ($max767){
+	@media ($max767) {
 		font-size: 14px;
-		line-height: 18px;
+		line-height: (18/14);
 	}
-	&._lock{
+	&._lock {
 		overflow: hidden;
 	}
 }
@@ -26,14 +26,14 @@ body {
 	width: 100%;
 	min-height: 100%;
 }
-.container{
+.container {
 	width: 100%;
 	max-width: 1440px;
 	padding-right: 60px;
 	padding-left: 60px;
 	margin-right: auto;
 	margin-left: auto;
-	@media ($max1023){
+	@media ($max1023) {
 		padding-right: 16px;
 		padding-left: 16px;
 	}

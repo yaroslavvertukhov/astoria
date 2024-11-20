@@ -1,0 +1,54 @@
+.pagination-wrapper {
+	margin-top: 60px;
+	border-top: solid 1px $gray;
+
+	@media ($max767) {
+		margin-top: 24px;
+	}
+}
+.pagination {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+	margin-top: 40px;
+
+	@media ($max399) {
+		justify-content: space-between;
+		gap: 16px;
+	}
+
+	@media ($max1023) {
+		margin-top: 24px;
+	}
+
+	&--center {
+		justify-content: center;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+		transition: 0.25s color;
+
+		&:hover {
+			color: $primaryHover;
+		}
+
+		&._active {
+			width: 32px;
+			height: 32px;
+			border: 1px solid $brand;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			pointer-events: none;
+		}
+
+		span {
+			@media ($max479) {
+				display: none;
+			}
+		}
+	}
+}

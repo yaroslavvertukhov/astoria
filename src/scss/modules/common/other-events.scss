@@ -1,0 +1,98 @@
+.other-events {
+    overflow: hidden;
+
+    @media ($max767) {
+        padding-top: 0;
+    }
+    .swiper {
+        overflow: visible;
+    }
+    .swiper-slide {
+        width: auto;
+        margin-right: 24px;
+        @media ($max767) {
+            margin-right: 12px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__wrapper {
+        position: relative;
+    }
+    &__head {
+        padding-top: 15px;
+        margin-bottom: 50px;
+
+        @media ($max767) {
+            padding-top: 0;
+            margin-bottom: 24px;
+        }
+    }
+    &__nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        pointer-events: none;
+
+        @media ($max767) {
+            position: relative;
+            margin-top: 40px;
+            pointer-events: auto;
+        }
+    }
+    &__arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        background-color: $gray;
+        border-radius: 50%;
+        pointer-events: auto;
+        transition: all 0.3s;
+
+        &.swiper-button-disabled {
+            opacity: 0.3;
+        }
+
+        @media ($hover) {
+            &:hover {
+                background-color: $grayHover;
+            }
+        }
+
+        &:active {
+            background-color: $grayActive;
+        }
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.card-events {
+    display: block;
+    width: 299px;
+    @media ($max767) {
+        width: 150px;
+    }
+    @media ($hover) {
+        &:hover {
+            .card-events__title {
+                color: $primaryHover;
+            }
+        }
+    }
+    &__body {
+        margin-top: 16px;
+    }
+    &__title {
+        transition: color 0.3s;
+    }
+}

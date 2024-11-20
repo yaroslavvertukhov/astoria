@@ -20,6 +20,7 @@
 /* Vendor */
 // @import "/~@fancyapps/ui/dist/fancybox/fancybox.css";
 @import 'modules/vendor/fancybox.css';
+@import 'modules/vendor/swiper.scss';
 
 /* ui-kit */
 @import 'base/ui-kit';
@@ -30,6 +31,7 @@
 @import 'modules/common/popup.scss';
 @import 'modules/common/tabs.scss';
 @import 'modules/common/form.scss';
+@import 'modules/common/pagination.scss';
 @import 'modules/common/intro.scss';
 @import 'modules/common/principles.scss';
 @import 'modules/common/partners.scss';
@@ -39,6 +41,10 @@
 @import 'modules/common/values.scss';
 @import 'modules/common/team.scss';
 @import 'modules/common/filter.scss';
+@import 'modules/common/banner.scss';
+@import 'modules/common/other-events.scss';
+@import 'modules/common/menu-page.scss';
+@import 'modules/common/navigation-catalog.scss';
 
 /* Browser specific styles */
 @import 'dirty/hacks';

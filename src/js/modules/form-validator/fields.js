@@ -13,11 +13,13 @@ class Field {
 
 		this.container = this.field.closest('.js-input');
 		this.radios = this.field.querySelectorAll('input[type="radio"]');
-		
+
 		this.interaction = this.checkInteraction();
 		this.patternEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 		this.isFilled = false;
+
+		this.checkboxToggle = null;
 
 		this.init();
 	}
@@ -25,12 +27,14 @@ class Field {
 	init() {
 		this.bindMethods();
 		this.addEventListeners();
+		this.checkToggleRequired();
 	}
 
 	bindMethods() {
 		this.onChange = this.onChange.bind(this);
 		this.onFocus = this.onFocus.bind(this);
 		this.onBlur = this.onBlur.bind(this);
+		this.onCheckboxToggleChange = this.onCheckboxToggleChange.bind(this);
 	}
 
 	addEventListeners() {
@@ -39,6 +43,10 @@ class Field {
 			this.field.addEventListener('focus', this.onFocus);
 			this.field.addEventListener('blur', this.onBlur);
 		}
+	}
+
+	addListenerCheckboxToggle() {
+		this.checkboxToggle.addEventListener('change', this.onCheckboxToggleChange);
 	}
 
 	onChange(e) {
@@ -125,6 +133,28 @@ class Field {
 	removeError() {
 		this.container.classList.remove(this.names.error);
 		this.isFilled = true;
+	}
+
+	checkToggleRequired() {
+		if (this.field.hasAttribute('data-input-toggle-required')) {
+			const name = this.field.getAttribute('data-input-toggle-required');
+			this.checkboxToggle = this.form.querySelector(
+				`[data-checkbox-toggle-required="${name}"]`
+			);
+			this.addListenerCheckboxToggle();
+		}
+	}
+
+	onCheckboxToggleChange(e) {
+		const { target } = e;
+
+		if (target.checked) {
+			this.removeError();
+			this.field.value = '';
+			this.field.setAttribute('disabled', true);
+		} else {
+			this.field.removeAttribute('disabled');
+		}
 	}
 
 	checkInteraction() {

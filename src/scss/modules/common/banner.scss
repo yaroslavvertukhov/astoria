@@ -1,0 +1,17 @@
+.banner {
+    padding-bottom: 120px;
+    @media ($max767) {
+        padding-bottom: 40px;
+    }
+    &__video {
+        &:before {
+            padding-bottom: pct-s(613, 1320);
+        }
+    }
+    &__body {
+        margin-top: 60px;
+        @media ($max767) {
+            margin-top: 16px;
+        }
+    }
+}

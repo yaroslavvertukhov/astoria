@@ -184,69 +184,6 @@
 	}
 }
 
-.slider {
-	&-visible {
-		@media (max-width: 1270px) {
-			.swiper {
-				overflow: visible;
-			}
-		}
-	}
-}
-
-.navigation-slider {
-	display: flex;
-	align-items: center;
-	gap: 16px;
-}
-
-.button-slider {
-	width: 32px;
-	height: 32px;
-	flex-shrink: 0;
-	border-radius: 4px;
-	background: $white;
-	border: 1px solid #AFB5C9;
-	transition: 0.3s all ease;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	// @media ($hover) {
-	// 	&:hover {
-	// 		border: 1px solid #e63c32;
-	// 		color: #e63c32;
-	// 	}
-	// }
-
-	&:active {
-		&.button-slider--prev {
-			transform: translate(-2px, 1px);
-		}
-
-		&.button-slider--next {
-			transform: translate(2px, 1px);
-		}
-	}
-
-	&.swiper-button-disabled {
-		pointer-events: none;
-		background: #f8fafc;
-		color: #94a3b8;
-	}
-}
-
-.pagination-slider {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	.swiper-pagination {
-		&-current {
-			color: #e63c32;
-		}
-	}
-}
-
 .swiper-free-mode > .swiper-wrapper {
 	transition-timing-function: ease-out;
 	margin: 0 auto;
