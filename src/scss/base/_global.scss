@@ -18,6 +18,7 @@ body {
 	}
 	&._lock {
 		overflow: hidden;
+		touch-action: none;
 	}
 }
 .wrapper {

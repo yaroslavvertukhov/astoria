@@ -1,5 +1,6 @@
 import '../scss/app.scss';
 
+import { initPreloader } from './modules/preloader';
 import { initBodyLock } from './modules/bodyLock';
 import { initFancy } from './modules/fancybox';
 import { initFilter } from './modules/filter';
@@ -12,6 +13,7 @@ import { initOtherEventsSlider } from './modules/sliders/otherEvents';
 import { initNavigationCatalog } from './modules/sliders/navigationCatalog';
 
 function initModules() {
+	initPreloader();
 	initBodyLock();
 	initHeader();
 	initFancy();

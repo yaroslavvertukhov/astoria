@@ -3,13 +3,43 @@
     @media ($max767) {
         padding-bottom: 40px;
     }
+    &._visible{
+        .banner{
+            &__video{
+                video{
+                    z-index: 0;
+                    pointer-events: none;
+                }
+            }
+            &__body{
+                opacity: 1;
+                transform: none;
+            }
+        }
+    }
     &__video {
+        position: static;
         &:before {
             padding-bottom: pct-s(613, 1320);
+        }
+        video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            clip-path: inset(0 0);
+            z-index: 10;
+            transition: clip-path 1s;
+            
         }
     }
     &__body {
         margin-top: 60px;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 0.7s;
         @media ($max767) {
             margin-top: 16px;
         }

@@ -1,5 +1,5 @@
 <% 
-const header = require('./layouts/basic/header.ejs'); 
+const header = require('./layouts/basic/header-lock.ejs'); 
 const footer = require('./layouts/basic/footer.ejs'); 
 const pag = require('./layouts/components/pagination-page.ejs'); 
 %> 
@@ -16,10 +16,13 @@ const pag = require('./layouts/components/pagination-page.ejs');
         </div>
     </div>
 
-    <section class="banner section">
+    <section class="banner section js-banner">
         <div class="container">
-            <div class="banner__video item-response">
-                <img src="images/content/banner-01.jpg" alt="">
+            <div class="banner__video item-response js-banner-box">
+                <video class="js-banner-item" autoplay loop muted playisinline onplay="if (!this.isPlaying){this.pause(); this.canVideoPlay = true};">
+                    <source src="images/content/video.webm" type="video/webm"/>
+                    <source src="images/content/video.mp4" type="video/mp4"/>
+                </video>
             </div>
             <div class="banner__body text-center">
                 <h1 class="title-italic fs-display mb-12 mb-8-mob">Банкет для официального приема</h1>
