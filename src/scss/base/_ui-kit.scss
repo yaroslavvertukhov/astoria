@@ -117,7 +117,7 @@
 	gap: 8px;
 	&:before,
 	&:after {
-		content: "";
+		content: '';
 		flex-shrink: 0;
 		width: 8px;
 		height: 8px;
@@ -246,13 +246,17 @@
 
 .first-section-from-header {
 	padding-top: 60px;
+
+	@media ($max1023) {
+		padding-top: 52px;
+	}
 }
 
 .item-response {
 	flex-shrink: 0;
 	position: relative;
 	&:before {
-		content: "";
+		content: '';
 		display: block;
 		padding-bottom: 100%;
 	}
