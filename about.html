@@ -107,7 +107,7 @@
             <h3 class="title-italic fs-display mb-80 mb-24-mob">Репутацию нельзя купить, <br> её можно только заработать</h3>
             <div class="values__row">
                 <div class="values__img item-response">
-                    <img src="images/content/values.jpg" alt="">
+                    <img loading="lazy" src="images/content/values.jpg" alt="">
                 </div>
                 <div class="values__body">
                     <div class="values__text fs-heading">
@@ -153,7 +153,7 @@
                     <div class="team__list">
                         <div class="team__item">
                             <div data-tab="1" class="team__img item-response js-tabs-block _active">
-                                <img src="images/content/team-01.jpg" alt="">
+                                <img loading="lazy" src="images/content/team-01.jpg" alt="">
                             </div>
                             <button type="button" data-tab="1" class="team__text js-tabs-trigger _active">
                                 <span class="team__name">Мелешко Вячеслав Валерьевич</span>
@@ -162,7 +162,7 @@
                         </div>
                         <div class="team__item">
                             <div data-tab="2" class="team__img item-response js-tabs-block">
-                                <img src="images/content/team-01.jpg" alt="">
+                                <img loading="lazy" src="images/content/team-01.jpg" alt="">
                             </div>
                             <button type="button" data-tab="2" class="team__text js-tabs-trigger">
                                 <span class="team__name">Мелешко Оксана Владимировна</span>
@@ -171,7 +171,7 @@
                         </div>
                         <div class="team__item">
                             <div data-tab="3" class="team__img item-response js-tabs-block">
-                                <img src="images/content/team-01.jpg" alt="">
+                                <img loading="lazy" src="images/content/team-01.jpg" alt="">
                             </div>
                             <button type="button" data-tab="3" class="team__text js-tabs-trigger">
                                 <span class="team__name">Прудников Алексей Андреевич</span>
@@ -180,7 +180,7 @@
                         </div>
                         <div class="team__item">
                             <div data-tab="4" class="team__img item-response js-tabs-block">
-                                <img src="images/content/team-01.jpg" alt="">
+                                <img loading="lazy" src="images/content/team-01.jpg" alt="">
                             </div>
                             <button type="button" data-tab="4" class="team__text js-tabs-trigger">
                                 <span class="team__name">Зыков Владимир Васильевич</span>
@@ -189,7 +189,7 @@
                         </div>
                         <div class="team__item">
                             <div data-tab="5" class="team__img item-response js-tabs-block">
-                                <img src="images/content/team-01.jpg" alt="">
+                                <img loading="lazy" src="images/content/team-01.jpg" alt="">
                             </div>
                             <button type="button" data-tab="5" class="team__text js-tabs-trigger">
                                 <span class="team__name">Иванова Наталья</span>
@@ -198,7 +198,7 @@
                         </div>
                         <div class="team__item">
                             <div data-tab="6" class="team__img item-response js-tabs-block">
-                                <img src="images/content/team-01.jpg" alt="">
+                                <img loading="lazy" src="images/content/team-01.jpg" alt="">
                             </div>
                             <button type="button" data-tab="6" class="team__text js-tabs-trigger">
                                 <span class="team__name">Смирнова Наталья Викторовна</span>
@@ -207,7 +207,7 @@
                         </div>
                         <div class="team__item">
                             <div data-tab="7" class="team__img item-response js-tabs-block">
-                                <img src="images/content/team-01.jpg" alt="">
+                                <img loading="lazy" src="images/content/team-01.jpg" alt="">
                             </div>
                             <button type="button" data-tab="7" class="team__text js-tabs-trigger">
                                 <span class="team__name">Ковальчук Вадим Павлович</span>
@@ -216,7 +216,7 @@
                         </div>
                         <div class="team__item">
                             <div data-tab="8" class="team__img item-response js-tabs-block">
-                                <img src="images/content/team-01.jpg" alt="">
+                                <img loading="lazy" src="images/content/team-01.jpg" alt="">
                             </div>
                             <button type="button" data-tab="8" class="team__text js-tabs-trigger">
                                 <span class="team__name">Ефимов Валентин</span>
@@ -345,9 +345,9 @@
                                 </div>
                             </div>
                             <div class="form__item">
-                                <div class="field">
+                                <div class="field js-input">
                                     <div class="field__box">
-                                        <input type="text" placeholder=" " class="field__input">
+                                        <input type="text" placeholder=" " data-input-toggle-required="date" class="field__input" data-required="text">
                                         <div class="field__placeholder">Дата мероприятия</div>
                                         <div class="field__error-icon">
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -361,7 +361,7 @@
                                 </div>
                                 <div class="mt-8">
                                     <label class="checkbox">
-                                        <input type="checkbox" class="checkbox__input">
+                                        <input type="checkbox" data-checkbox-toggle-required="date" class="checkbox__input">
                                         <span class="checkbox__body"></span>
                                         <span class="checkbox__text">Еще не определились</span>
                                     </label>
@@ -406,9 +406,9 @@
                                 </div>
                             </div>
                             <div class="form__item">
-                                <div class="field">
+                                <div class="field js-input">
                                     <div class="field__box">
-                                        <input type="text" placeholder=" " class="field__input">
+                                        <input type="text" placeholder=" " data-input-toggle-required="guests" class="field__input" data-required="text">
                                         <div class="field__placeholder">Сколько будет гостей?</div>
                                         <div class="field__error-icon">
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -422,7 +422,7 @@
                                 </div>
                                 <div class="mt-8">
                                     <label class="checkbox">
-                                        <input type="checkbox" class="checkbox__input">
+                                        <input type="checkbox" data-checkbox-toggle-required="guests" class="checkbox__input">
                                         <span class="checkbox__body"></span>
                                         <span class="checkbox__text">Еще не определились</span>
                                     </label>
@@ -645,9 +645,9 @@
                     </div>
                 </div>
                 <div class="form__item">
-                    <div class="field">
+                    <div class="field js-input">
                         <div class="field__box">
-                            <input type="text" placeholder=" " class="field__input">
+                            <input type="text" placeholder=" " data-input-toggle-required="date" class="field__input" data-required="text">
                             <div class="field__placeholder">Дата мероприятия</div>
                             <div class="field__error-icon">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -661,7 +661,7 @@
                     </div>
                     <div class="mt-8">
                         <label class="checkbox">
-                            <input type="checkbox" class="checkbox__input">
+                            <input type="checkbox" data-checkbox-toggle-required="date" class="checkbox__input">
                             <span class="checkbox__body"></span>
                             <span class="checkbox__text">Еще не определились</span>
                         </label>
@@ -706,9 +706,9 @@
                     </div>
                 </div>
                 <div class="form__item">
-                    <div class="field">
+                    <div class="field js-input">
                         <div class="field__box">
-                            <input type="text" placeholder=" " class="field__input">
+                            <input type="text" placeholder=" " data-input-toggle-required="guests" class="field__input" data-required="text">
                             <div class="field__placeholder">Сколько будет гостей?</div>
                             <div class="field__error-icon">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -722,7 +722,7 @@
                     </div>
                     <div class="mt-8">
                         <label class="checkbox">
-                            <input type="checkbox" class="checkbox__input">
+                            <input type="checkbox" data-checkbox-toggle-required="guests" class="checkbox__input">
                             <span class="checkbox__body"></span>
                             <span class="checkbox__text">Еще не определились</span>
                         </label>
@@ -785,9 +785,9 @@
                     </div>
                 </div>
                 <div class="form__item">
-                    <div class="field">
+                    <div class="field js-input">
                         <div class="field__box">
-                            <input type="text" placeholder=" " class="field__input">
+                            <input type="text" placeholder=" " data-input-toggle-required="date" class="field__input" data-required="text">
                             <div class="field__placeholder">Дата мероприятия</div>
                             <div class="field__error-icon">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -801,7 +801,7 @@
                     </div>
                     <div class="mt-8">
                         <label class="checkbox">
-                            <input type="checkbox" class="checkbox__input">
+                            <input type="checkbox" data-checkbox-toggle-required="date" class="checkbox__input">
                             <span class="checkbox__body"></span>
                             <span class="checkbox__text">Еще не определились</span>
                         </label>
@@ -810,7 +810,7 @@
                 <div class="form__item">
                     <div class="field js-input">
                         <div class="field__box">
-                            <input type="text" placeholder=" " class="field__input" data-required="text">
+                            <input type="text" placeholder=" " class="field__input" data-input-toggle-required="guests" data-required="text">
                             <div class="field__placeholder">Сколько будет гостей?</div>
                             <div class="field__error-icon">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -824,7 +824,7 @@
                     </div>
                     <div class="mt-8">
                         <label class="checkbox">
-                            <input type="checkbox" class="checkbox__input">
+                            <input type="checkbox" data-checkbox-toggle-required="guests" class="checkbox__input">
                             <span class="checkbox__body"></span>
                             <span class="checkbox__text">Еще не определились</span>
                         </label>
