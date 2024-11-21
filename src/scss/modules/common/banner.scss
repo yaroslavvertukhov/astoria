@@ -3,15 +3,15 @@
     @media ($max767) {
         padding-bottom: 40px;
     }
-    &._visible{
-        .banner{
-            &__video{
-                video{
+    &._visible {
+        .banner {
+            &__video {
+                video {
                     z-index: 0;
                     pointer-events: none;
                 }
             }
-            &__body{
+            &__body {
                 opacity: 1;
                 transform: none;
             }
@@ -22,17 +22,17 @@
         &:before {
             padding-bottom: pct-s(613, 1320);
         }
-        video{
+        video {
             position: absolute;
             top: 0;
             left: 0;
             width: 100vw;
             height: 100vh;
+            height: calc(var(--vh, 1vh) * 100);
             object-fit: cover;
             clip-path: inset(0 0);
             z-index: 10;
             transition: clip-path 1s;
-            
         }
     }
     &__body {

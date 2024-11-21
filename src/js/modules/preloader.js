@@ -1,15 +1,16 @@
 export default class Preloader {
 	constructor(selector) {
-        if (!selector) {
-            return;
-        }
-        this.loader = selector;
+		if (!selector) {
+			return;
+		}
+		this.loader = selector;
 		this.countCur = this.loader.querySelector('.js-preloader-count');
 		this.countTotal = this.loader.querySelector('.js-preloader-count-total');
 
 		this.banner = document.querySelector('.js-banner');
 		this.boxBanner = this.banner && this.banner.querySelector('.js-banner-box');
-		this.itemBanner = this.banner && this.banner.querySelector('.js-banner-item');
+		this.itemBanner =
+			this.banner && this.banner.querySelector('.js-banner-item');
 
 		this.delayCheckLoad = 500;
 		this.animTransition = 1000;
@@ -27,7 +28,7 @@ export default class Preloader {
 		this.bindMethods();
 		this.onInit();
 
-		if (this.banner) {
+		if (this.banner && !this.isMobile) {
 			this.addListenerResize();
 		}
 	}
@@ -40,25 +41,13 @@ export default class Preloader {
 		window.addEventListener('resize', this.onResize);
 	}
 
-	checkCanPlayVideoMobile() {
-		setTimeout(() => {
-			if (this.itemBanner.readyState === 4) {
-				this.onCanPlayMobile();
-			} else {
-				this.checkCanPlayVideoMobile();
-			}
-		}, this.delayCheckLoad);
-	}
-
 	onInit() {
 		if (this.banner) {
-			this.getVideoPosition();
+			const vh = window.innerHeight * 0.01;
+			document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-			if (this.isMobile) {
-				this.checkCanPlayVideoMobile();
-			} else {
-				this.checkCanPlayVideo();
-			}
+			this.getVideoPosition();
+			this.checkCanPlayVideo();
 		} else {
 			this.hideLoaderStatic();
 		}
@@ -69,7 +58,7 @@ export default class Preloader {
 		this.setClipPath();
 	}
 
-	onCanPlayMobile() {
+	onCanPlay() {
 		if (!this.itemBanner.isPlaying) {
 			this.startPlay();
 		}
@@ -77,8 +66,8 @@ export default class Preloader {
 
 	checkCanPlayVideo() {
 		setTimeout(() => {
-			if (this.itemBanner.canVideoPlay && !this.itemBanner.isPlaying) {
-				this.startPlay();
+			if (this.itemBanner.readyState === 4) {
+				this.onCanPlay();
 			} else {
 				this.checkCanPlayVideo();
 			}
@@ -100,6 +89,7 @@ export default class Preloader {
 			document.body.style.overflow = '';
 			document.body.style.touchAction = '';
 			this.banner.classList.add('_visible');
+			this.loader.style.display = 'none';
 		}, this.delayOnFullscreen + this.animTransition);
 	}
 
@@ -115,6 +105,7 @@ export default class Preloader {
 			setTimeout(() => {
 				document.body.style.overflow = '';
 				document.body.style.touchAction = '';
+				this.loader.style.display = 'none';
 			}, this.animTransition);
 		}, this.delayCheckLoad);
 	}
@@ -127,18 +118,23 @@ export default class Preloader {
 		this.rect = this.boxBanner.getBoundingClientRect();
 		this.top = this.rect.top;
 		this.left = this.rect.left;
-		this.bottom = window.innerHeight - this.rect.bottom;
+		this.bottom =
+			+window.getComputedStyle(this.itemBanner).height.replace('px', '') -
+			this.rect.bottom;
 	}
 
 	get isMobile() {
 		const ua = navigator.userAgent.toLowerCase();
-		const flag = /mobile|iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(ua);
+		const flag =
+			/mobile|iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(
+				ua
+			);
 
 		return flag;
-	  }
+	}
 }
 
 export function initPreloader() {
-    const selector = document.querySelector('.js-preloader');
+	const selector = document.querySelector('.js-preloader');
 	new Preloader(selector);
 }
