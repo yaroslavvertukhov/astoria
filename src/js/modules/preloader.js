@@ -88,6 +88,7 @@ export default class Preloader {
 	startPlay() {
 		this.itemBanner.isPlaying = true;
 		this.itemBanner.play();
+		this.itemBanner.removeAttribute('controls');
 
 		this.hideLoader();
 
