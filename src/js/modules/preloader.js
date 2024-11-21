@@ -15,6 +15,11 @@ export default class Preloader {
 		this.animTransition = 1000;
 		this.delayOnFullscreen = 3000;
 
+		this.rect = null;
+		this.top = 0;
+		this.left = 0;
+		this.bottom = 0;
+
 		this.init();
 	}
 
@@ -35,10 +40,25 @@ export default class Preloader {
 		window.addEventListener('resize', this.onResize);
 	}
 
+	checkCanPlayVideoMobile() {
+		setTimeout(() => {
+			if (this.itemBanner.readyState === 4) {
+				this.onCanPlayMobile();
+			} else {
+				this.checkCanPlayVideoMobile();
+			}
+		}, this.delayCheckLoad);
+	}
+
 	onInit() {
 		if (this.banner) {
 			this.getVideoPosition();
-			this.checkCanPlayVideo(this.top, this.left, this.bottom);
+
+			if (this.isMobile) {
+				this.checkCanPlayVideoMobile();
+			} else {
+				this.checkCanPlayVideo();
+			}
 		} else {
 			this.hideLoaderStatic();
 		}
@@ -46,27 +66,33 @@ export default class Preloader {
 
 	onResize(e) {
 		this.getVideoPosition();
-		this.setClipPath(this.top, this.left, this.bottom);
+		this.setClipPath();
 	}
 
-	checkCanPlayVideo(top, left, bottom) {
+	onCanPlayMobile() {
+		if (!this.itemBanner.isPlaying) {
+			this.startPlay();
+		}
+	}
+
+	checkCanPlayVideo() {
 		setTimeout(() => {
 			if (this.itemBanner.canVideoPlay && !this.itemBanner.isPlaying) {
-				this.startPlay(top, left, bottom);
+				this.startPlay();
 			} else {
-				this.checkCanPlayVideo(top, left, bottom);
+				this.checkCanPlayVideo();
 			}
 		}, this.delayCheckLoad);
 	}
 
-	startPlay(top, left, bottom) {
+	startPlay() {
 		this.itemBanner.isPlaying = true;
 		this.itemBanner.play();
 
 		this.hideLoader();
 
 		setTimeout(() => {
-			this.setClipPath(top, left, bottom);
+			this.setClipPath();
 		}, this.delayOnFullscreen);
 
 		setTimeout(() => {
@@ -92,8 +118,8 @@ export default class Preloader {
 		}, this.delayCheckLoad);
 	}
 
-	setClipPath(top, left, bottom) {
-		this.itemBanner.style.clipPath = `inset(${top}px ${left}px ${bottom}px ${left}px)`;
+	setClipPath() {
+		this.itemBanner.style.clipPath = `inset(${this.top}px ${this.left}px ${this.bottom}px ${this.left}px)`;
 	}
 
 	getVideoPosition() {
@@ -102,6 +128,13 @@ export default class Preloader {
 		this.left = this.rect.left;
 		this.bottom = window.innerHeight - this.rect.bottom;
 	}
+
+	get isMobile() {
+		const ua = navigator.userAgent.toLowerCase();
+		const flag = /mobile|iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(ua);
+
+		return flag;
+	  }
 }
 
 export function initPreloader() {
