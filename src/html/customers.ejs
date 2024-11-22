@@ -1,0 +1,249 @@
+<% 
+const header = require('./layouts/basic/header.ejs'); 
+const footer = require('./layouts/basic/footer.ejs'); 
+%> 
+<%- header()-%>
+<main class="page">
+    <section class="customers section first-section-from-header">
+        <div class="container">
+            <div class="customers__row">
+                <div class="customers__slider js-slider-mobile">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="customers__img item-response">
+                                    <img loading="lazy" src="images/content/customers-01.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="customers__img item-response">
+                                    <img loading="lazy" src="images/content/customers-02.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="customers__img item-response">
+                                    <img loading="lazy" src="images/content/customers-03.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="customers__img item-response">
+                                    <img loading="lazy" src="images/content/customers-04.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="customers__body">
+                    <h1 class="customers__title title-italic fs-display mb-24">Создайте незабываемое гастрономическое путешествие</h1>
+                    <div class="customers__text">
+                        <p>Если уровень вашего мероприятия требует лучшего сервиса, предлагаем познакомиться с нами на личной встрече</p>
+                    </div>
+                    <div class="customers__btns">
+                        <a href="#" download="#" class="btn btn--border btn--full-mob">Скачать презентацию</a>
+                        <a href="#" download="#" class="btn btn--border btn--full-mob">Скачать реквизиты</a>
+                        <a href="#" download="#" class="btn btn--border btn--full-mob">Скачать договор</a>
+                    </div>
+                    <div class="customers__btns">
+                        <button type="button" href="#popup-request-tasting" data-fancybox="popup-request-tasting" class="btn btn--primary btn--full-mob js-popup-trigger">Записаться на дегустацию</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq section">
+        <div class="container">
+            <div class="faq__row">
+                <div class="faq__slider js-slider-mobile">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="faq__img item-response">
+                                    <img loading="lazy" src="images/content/faq-01.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="faq__img item-response">
+                                    <img loading="lazy" src="images/content/faq-02.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="faq__img item-response">
+                                    <img loading="lazy" src="images/content/faq-03.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__body">
+                    <h2 class="fs-heading mb-12">Часты вопросы</h2>
+                    <div class="faq__items js-spollers-container">
+                        <div class="faq__item js-spoller">
+                            <button type="button" class="faq__trigger js-spoller-trigger">
+                                География нашей деятельности?
+                                <div class="faq__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.5C12.2761 4.5 12.5 4.72386 12.5 5V11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H12.5V19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19V12.5H5C4.72386 12.5 4.5 12.2761 4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H11.5V5C11.5 4.72386 11.7239 4.5 12 4.5Z" fill="#121212"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z" fill="#121212"/>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="js-spoller-block">
+                                <div class="faq__text">
+                                    <p>При заблаговременной подготовке к мероприятию, полная оплата должна производиться за 14 дней до даты проведения мероприятия. В иных случаях порядок оплаты обсуждается индивидуально</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item js-spoller">
+                            <button type="button" class="faq__trigger js-spoller-trigger">
+                                Форма оплаты?
+                                <div class="faq__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.5C12.2761 4.5 12.5 4.72386 12.5 5V11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H12.5V19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19V12.5H5C4.72386 12.5 4.5 12.2761 4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H11.5V5C11.5 4.72386 11.7239 4.5 12 4.5Z" fill="#121212"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z" fill="#121212"/>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="js-spoller-block">
+                                <div class="faq__text">
+                                    <p>При заблаговременной подготовке к мероприятию, полная оплата должна производиться за 14 дней до даты проведения мероприятия. В иных случаях порядок оплаты обсуждается индивидуально</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item js-spoller">
+                            <button type="button" class="faq__trigger js-spoller-trigger">
+                                Стоимость услуги на персону?
+                                <div class="faq__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.5C12.2761 4.5 12.5 4.72386 12.5 5V11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H12.5V19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19V12.5H5C4.72386 12.5 4.5 12.2761 4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H11.5V5C11.5 4.72386 11.7239 4.5 12 4.5Z" fill="#121212"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z" fill="#121212"/>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="js-spoller-block">
+                                <div class="faq__text">
+                                    <p>При заблаговременной подготовке к мероприятию, полная оплата должна производиться за 14 дней до даты проведения мероприятия. В иных случаях порядок оплаты обсуждается индивидуально</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item js-spoller">
+                            <button type="button" class="faq__trigger js-spoller-trigger">
+                                Есть ли пробковый сбор?
+                                <div class="faq__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.5C12.2761 4.5 12.5 4.72386 12.5 5V11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H12.5V19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19V12.5H5C4.72386 12.5 4.5 12.2761 4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H11.5V5C11.5 4.72386 11.7239 4.5 12 4.5Z" fill="#121212"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z" fill="#121212"/>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="js-spoller-block">
+                                <div class="faq__text">
+                                    <p>При заблаговременной подготовке к мероприятию, полная оплата должна производиться за 14 дней до даты проведения мероприятия. В иных случаях порядок оплаты обсуждается индивидуально</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item js-spoller">
+                            <button type="button" class="faq__trigger js-spoller-trigger">
+                                Какая минимальная сумма заказа?
+                                <div class="faq__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.5C12.2761 4.5 12.5 4.72386 12.5 5V11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H12.5V19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19V12.5H5C4.72386 12.5 4.5 12.2761 4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H11.5V5C11.5 4.72386 11.7239 4.5 12 4.5Z" fill="#121212"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z" fill="#121212"/>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="js-spoller-block">
+                                <div class="faq__text">
+                                    <p>При заблаговременной подготовке к мероприятию, полная оплата должна производиться за 14 дней до даты проведения мероприятия. В иных случаях порядок оплаты обсуждается индивидуально</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item js-spoller">
+                            <button type="button" class="faq__trigger js-spoller-trigger">
+                                Стоимость проведения дегустации?
+                                <div class="faq__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.5C12.2761 4.5 12.5 4.72386 12.5 5V11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H12.5V19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19V12.5H5C4.72386 12.5 4.5 12.2761 4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H11.5V5C11.5 4.72386 11.7239 4.5 12 4.5Z" fill="#121212"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z" fill="#121212"/>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="js-spoller-block">
+                                <div class="faq__text">
+                                    <p>При заблаговременной подготовке к мероприятию, полная оплата должна производиться за 14 дней до даты проведения мероприятия. В иных случаях порядок оплаты обсуждается индивидуально</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item js-spoller">
+                            <button type="button" class="faq__trigger js-spoller-trigger">
+                                Как быстро можно получить КП?
+                                <div class="faq__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.5C12.2761 4.5 12.5 4.72386 12.5 5V11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H12.5V19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19V12.5H5C4.72386 12.5 4.5 12.2761 4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H11.5V5C11.5 4.72386 11.7239 4.5 12 4.5Z" fill="#121212"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z" fill="#121212"/>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="js-spoller-block">
+                                <div class="faq__text">
+                                    <p>При заблаговременной подготовке к мероприятию, полная оплата должна производиться за 14 дней до даты проведения мероприятия. В иных случаях порядок оплаты обсуждается индивидуально</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item js-spoller">
+                            <button type="button" class="faq__trigger js-spoller-trigger">
+                                Какой порядок оплаты?
+                                <div class="faq__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.5C12.2761 4.5 12.5 4.72386 12.5 5V11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H12.5V19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19V12.5H5C4.72386 12.5 4.5 12.2761 4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H11.5V5C11.5 4.72386 11.7239 4.5 12 4.5Z" fill="#121212"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z" fill="#121212"/>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="js-spoller-block">
+                                <div class="faq__text">
+                                    <p>При заблаговременной подготовке к мероприятию, полная оплата должна производиться за 14 дней до даты проведения мероприятия. В иных случаях порядок оплаты обсуждается индивидуально</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item js-spoller">
+                            <button type="button" class="faq__trigger js-spoller-trigger">
+                                Какая у нас система налогообложения?
+                                <div class="faq__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.5C12.2761 4.5 12.5 4.72386 12.5 5V11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H12.5V19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19V12.5H5C4.72386 12.5 4.5 12.2761 4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H11.5V5C11.5 4.72386 11.7239 4.5 12 4.5Z" fill="#121212"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z" fill="#121212"/>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="js-spoller-block">
+                                <div class="faq__text">
+                                    <p>При заблаговременной подготовке к мероприятию, полная оплата должна производиться за 14 дней до даты проведения мероприятия. В иных случаях порядок оплаты обсуждается индивидуально</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%- footer() -%>

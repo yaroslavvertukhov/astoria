@@ -3,10 +3,21 @@
     @media ($max767) {
         padding-bottom: 40px;
     }
+    &--static {
+        .banner {
+            &__item {
+                position: relative;
+            }
+            &__body {
+                opacity: 1;
+                transform: none;
+            }
+        }
+    }
     &._visible {
         .banner {
-            &__video {
-                video {
+            &__item {
+                item {
                     z-index: 0;
                     pointer-events: none;
                 }
@@ -17,7 +28,8 @@
             }
         }
     }
-    &__video {
+
+    &__item {
         position: static;
         &:before {
             padding-bottom: pct-s(613, 1320);

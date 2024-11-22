@@ -1,0 +1,228 @@
+<% 
+const header = require('./layouts/basic/header.ejs'); 
+const footer = require('./layouts/basic/footer.ejs'); 
+const pag = require('./layouts/components/pagination-page.ejs'); 
+%> 
+<%- header()-%>
+<main class="page">
+    <div class="first-section-from-header">
+        <div class="container">
+            <div class="menu-template">
+                <div class="menu-template__nav js-nav-catalog">
+                    <div class="navigation-catalog swiper">
+                        <div class="navigation-catalog__row swiper-wrapper">
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link _active">Все</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Корпоратив</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">День рождения</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Свадьба</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Другое</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-template__row">
+                    <div class="menu-template__item">
+                        <a href="#" class="service-card">
+                            <div class="service-card__img item-response">
+                                <img loading="lazy" src="images/content/service-01.jpg" alt="service-image">
+                            </div>
+                            <div class="service-card__text">
+                                <div class="service-card__title fs-heading fw-500 two-strokes">
+                                    Организация свадебного банкета
+                                </div>
+                                <span>12 000 ₽ на человека</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu-template__item">
+                        <a href="#" class="service-card">
+                            <div class="service-card__img item-response">
+                                <img loading="lazy" src="images/content/service-01.jpg" alt="service-image">
+                            </div>
+                            <div class="service-card__text">
+                                <div class="service-card__title fs-heading fw-500 two-strokes">
+                                    Организация свадебного банкета
+                                </div>
+                                <span>12 000 ₽ на человека</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu-template__item">
+                        <a href="#" class="service-card">
+                            <div class="service-card__img item-response">
+                                <img loading="lazy" src="images/content/service-01.jpg" alt="service-image">
+                            </div>
+                            <div class="service-card__text">
+                                <div class="service-card__title fs-heading fw-500 two-strokes">
+                                    Организация свадебного банкета
+                                </div>
+                                <span>12 000 ₽ на человека</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu-template__item">
+                        <a href="#" class="service-card">
+                            <div class="service-card__img item-response">
+                                <img loading="lazy" src="images/content/service-01.jpg" alt="service-image">
+                            </div>
+                            <div class="service-card__text">
+                                <div class="service-card__title fs-heading fw-500 two-strokes">
+                                    Организация свадебного банкета
+                                </div>
+                                <span>12 000 ₽ на человека</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu-template__item">
+                        <a href="#" class="service-card">
+                            <div class="service-card__img item-response">
+                                <img loading="lazy" src="images/content/service-01.jpg" alt="service-image">
+                            </div>
+                            <div class="service-card__text">
+                                <div class="service-card__title fs-heading fw-500 two-strokes">
+                                    Организация свадебного банкета
+                                </div>
+                                <span>12 000 ₽ на человека</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu-template__item">
+                        <a href="#" class="service-card">
+                            <div class="service-card__img item-response">
+                                <img loading="lazy" src="images/content/service-01.jpg" alt="service-image">
+                            </div>
+                            <div class="service-card__text">
+                                <div class="service-card__title fs-heading fw-500 two-strokes">
+                                    Организация свадебного банкета
+                                </div>
+                                <span>12 000 ₽ на человека</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-template__item menu-template__item--full">
+                        <div class="principles principles--small">
+                            <div class="principles__bg">
+                                <picture>
+                                    <source type="image/webp" media="(max-width: 767px)" srcset="images/content/principles-bg-mob.jpg">
+                                    <img loading="lazy" src="images/content/principles-bg-02.jpg" alt="">
+                                </picture>
+                            </div>
+                    
+                            <div class="principles__wrapper bg-white"> 
+                                <h3 class="title-italic fs-display">Приглашаем на бесплатную дегустацию</h3>
+                                <div class="principles__text fs-heading text-center">
+                                    Вы сможете попробовать самые лучшие блюда Москвы от наших шеф поваров
+                                </div>
+                                <div class="principles__star">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 0C14.6479 9.57746 9.01408 14.3662 0 20C8.16901 25.6338 13.8028 29.0141 20 40C26.1972 29.0141 31.831 25.6338 40 20C30.8451 14.507 25.3521 9.57746 20 0Z" fill="#121212"/>
+                                    </svg>
+                                </div>
+
+                                <button type="button" href="#popup-request-tasting" data-fancybox="popup-request-tasting" class="btn btn--primary js-popup-trigger">Записаться на дегустацию</button>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                    <div class="menu-template__item">
+                        <a href="#" class="service-card">
+                            <div class="service-card__img item-response">
+                                <img loading="lazy" src="images/content/service-01.jpg" alt="service-image">
+                            </div>
+                            <div class="service-card__text">
+                                <div class="service-card__title fs-heading fw-500 two-strokes">
+                                    Организация свадебного банкета
+                                </div>
+                                <span>12 000 ₽ на человека</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu-template__item">
+                        <a href="#" class="service-card">
+                            <div class="service-card__img item-response">
+                                <img loading="lazy" src="images/content/service-01.jpg" alt="service-image">
+                            </div>
+                            <div class="service-card__text">
+                                <div class="service-card__title fs-heading fw-500 two-strokes">
+                                    Организация свадебного банкета
+                                </div>
+                                <span>12 000 ₽ на человека</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu-template__item">
+                        <a href="#" class="service-card">
+                            <div class="service-card__img item-response">
+                                <img loading="lazy" src="images/content/service-01.jpg" alt="service-image">
+                            </div>
+                            <div class="service-card__text">
+                                <div class="service-card__title fs-heading fw-500 two-strokes">
+                                    Организация свадебного банкета
+                                </div>
+                                <span>12 000 ₽ на человека</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu-template__item">
+                        <a href="#" class="service-card">
+                            <div class="service-card__img item-response">
+                                <img loading="lazy" src="images/content/service-01.jpg" alt="service-image">
+                            </div>
+                            <div class="service-card__text">
+                                <div class="service-card__title fs-heading fw-500 two-strokes">
+                                    Организация свадебного банкета
+                                </div>
+                                <span>12 000 ₽ на человека</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu-template__item">
+                        <a href="#" class="service-card">
+                            <div class="service-card__img item-response">
+                                <img loading="lazy" src="images/content/service-01.jpg" alt="service-image">
+                            </div>
+                            <div class="service-card__text">
+                                <div class="service-card__title fs-heading fw-500 two-strokes">
+                                    Организация свадебного банкета
+                                </div>
+                                <span>12 000 ₽ на человека</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu-template__item">
+                        <a href="#" class="service-card">
+                            <div class="service-card__img item-response">
+                                <img loading="lazy" src="images/content/service-01.jpg" alt="service-image">
+                            </div>
+                            <div class="service-card__text">
+                                <div class="service-card__title fs-heading fw-500 two-strokes">
+                                    Организация свадебного банкета
+                                </div>
+                                <span>12 000 ₽ на человека</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <%- pag()-%>
+            </div>
+        </div>
+    </div>
+</main>
+<%- footer() -%>

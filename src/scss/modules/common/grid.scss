@@ -171,10 +171,8 @@
 	@media ($hover) {
 		&:hover {
 			.card-grid {
-				&__img {
-					img {
-						transform: scale(1.1);
-					}
+				&__title {
+					color: $primaryHover;
 				}
 			}
 		}
@@ -191,10 +189,10 @@
 		}
 		img {
 			object-fit: cover;
-			transition: transform 0.3s;
 		}
 	}
 	&__title {
 		margin-bottom: 8px;
+		transition: color 0.3s;
 	}
 }

@@ -30,6 +30,7 @@
 @import 'modules/common/footer.scss';
 @import 'modules/common/popup.scss';
 @import 'modules/common/tabs.scss';
+@import 'modules/common/spoller.scss';
 @import 'modules/common/form.scss';
 @import 'modules/common/pagination.scss';
 @import 'modules/common/intro.scss';
@@ -45,6 +46,8 @@
 @import 'modules/common/other-events.scss';
 @import 'modules/common/menu-page.scss';
 @import 'modules/common/navigation-catalog.scss';
+@import 'modules/common/customers.scss';
+@import 'modules/common/faq.scss';
 
 /* Browser specific styles */
 @import 'dirty/hacks';

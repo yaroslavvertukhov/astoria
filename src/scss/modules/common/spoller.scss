@@ -1,0 +1,12 @@
+.js-spoller {
+    &-trigger {
+        cursor: pointer;
+        * {
+            pointer-events: none;
+        }
+    }
+
+    &-block {
+        display: none;
+    }
+}

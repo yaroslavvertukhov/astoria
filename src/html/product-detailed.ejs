@@ -1,0 +1,316 @@
+<% 
+const header = require('./layouts/basic/header.ejs'); 
+const footer = require('./layouts/basic/footer.ejs'); 
+%> 
+<%- header()-%>
+<main class="page">
+    <div class="first-section-from-header">
+        <div class="container">
+            <div class="menu-template">
+                <div class="menu-template__nav js-nav-catalog">
+                    <div class="navigation-catalog swiper">
+                        <div class="navigation-catalog__row swiper-wrapper">
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link _active">Все</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Закуски </div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Супы</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Горячие блюда</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Салаты</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Гарниры</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Сладкое</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Напитки</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-template__description">
+                    <div class="product-block">
+                        <div class="product-block__image">
+                            <div class="product-block__image-bx item-response">
+                                <img loading="lazy" src="images/content/menu-card-big.png" alt="Осьминог по-сицилийски">
+                            </div>
+                        </div>
+
+                        <div class="product-block__info">
+                            <h1 class="product-block__title fs-display title-italic">
+                                Осьминог по-сицилийски
+                            </h1>
+
+                            <div class="product-block__text">
+                                Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро)
+                            </div>
+
+                            <div class="product-block__weight">
+                                210 гр
+                            </div>
+
+                            <div class="product-block__btns">
+                                <button type="button" href="#popup-request-tasting" data-fancybox="popup-request-tasting" class="btn btn--primary js-popup-trigger">Записаться на дегустацию</button>
+                                <button type="button" href="#popup-request" data-fancybox="popup-request" class="btn btn--border js-popup-trigger">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="title-dots fs-body-accent mb-40 mb-24-mob">Другие горячие блюда</h2>
+
+                <div class="menu-template__row">
+                    <div class="menu-template__item">
+                        <a href="#" class="menu-card">
+                            <div class="menu-card__img">
+                                <div class="menu-card__img-item item-response">
+                                    <img loading="lazy" src="images/content/menu-card.png" alt="Осьминог по-сицилийски">
+                                </div>
+
+                                <span class="menu-card__weight">210 гр</span>  
+                            </div>
+
+                            <div class="menu-card__body">
+                                <div class="menu-card__name fs-heading fw-500">
+                                    Осьминог по-сицилийски
+                                </div>
+
+                                <div class="menu-card__desc four-strokes">
+                                    Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро…
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-template__item">
+                        <a href="#" class="menu-card">
+                            <div class="menu-card__img">
+                                <div class="menu-card__img-item item-response">
+                                    <img loading="lazy" src="images/content/menu-card.png" alt="Осьминог по-сицилийски">
+                                </div>
+
+                                <span class="menu-card__weight">210 гр</span>  
+                            </div>
+
+                            <div class="menu-card__body">
+                                <div class="menu-card__name fs-heading fw-500">
+                                    Осьминог по-сицилийски
+                                </div>
+
+                                <div class="menu-card__desc four-strokes">
+                                    Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро…
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-template__item">
+                        <a href="#" class="menu-card">
+                            <div class="menu-card__img">
+                                <div class="menu-card__img-item item-response">
+                                    <img loading="lazy" src="images/content/menu-card.png" alt="Осьминог по-сицилийски">
+                                </div>
+
+                                <span class="menu-card__weight">210 гр</span>  
+                            </div>
+
+                            <div class="menu-card__body">
+                                <div class="menu-card__name fs-heading fw-500">
+                                    Осьминог по-сицилийски
+                                </div>
+
+                                <div class="menu-card__desc four-strokes">
+                                    Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро…
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-template__item">
+                        <a href="#" class="menu-card">
+                            <div class="menu-card__img">
+                                <div class="menu-card__img-item item-response">
+                                    <img loading="lazy" src="images/content/menu-card.png" alt="Осьминог по-сицилийски">
+                                </div>
+
+                                <span class="menu-card__weight">210 гр</span>  
+                            </div>
+
+                            <div class="menu-card__body">
+                                <div class="menu-card__name fs-heading fw-500">
+                                    Осьминог по-сицилийски
+                                </div>
+
+                                <div class="menu-card__desc four-strokes">
+                                    Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро…
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-template__item">
+                        <a href="#" class="menu-card">
+                            <div class="menu-card__img">
+                                <div class="menu-card__img-item item-response">
+                                    <img loading="lazy" src="images/content/menu-card.png" alt="Осьминог по-сицилийски">
+                                </div>
+
+                                <span class="menu-card__weight">210 гр</span>  
+                            </div>
+
+                            <div class="menu-card__body">
+                                <div class="menu-card__name fs-heading fw-500">
+                                    Осьминог по-сицилийски
+                                </div>
+
+                                <div class="menu-card__desc four-strokes">
+                                    Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро…
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-template__item">
+                        <a href="#" class="menu-card">
+                            <div class="menu-card__img">
+                                <div class="menu-card__img-item item-response">
+                                    <img loading="lazy" src="images/content/menu-card.png" alt="Осьминог по-сицилийски">
+                                </div>
+
+                                <span class="menu-card__weight">210 гр</span>  
+                            </div>
+
+                            <div class="menu-card__body">
+                                <div class="menu-card__name fs-heading fw-500">
+                                    Осьминог по-сицилийски
+                                </div>
+
+                                <div class="menu-card__desc four-strokes">
+                                    Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро…
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-template__item">
+                        <a href="#" class="menu-card">
+                            <div class="menu-card__img">
+                                <div class="menu-card__img-item item-response">
+                                    <img loading="lazy" src="images/content/menu-card.png" alt="Осьминог по-сицилийски">
+                                </div>
+
+                                <span class="menu-card__weight">210 гр</span>  
+                            </div>
+
+                            <div class="menu-card__body">
+                                <div class="menu-card__name fs-heading fw-500">
+                                    Осьминог по-сицилийски
+                                </div>
+
+                                <div class="menu-card__desc four-strokes">
+                                    Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро…
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-template__item">
+                        <a href="#" class="menu-card">
+                            <div class="menu-card__img">
+                                <div class="menu-card__img-item item-response">
+                                    <img loading="lazy" src="images/content/menu-card.png" alt="Осьминог по-сицилийски">
+                                </div>
+
+                                <span class="menu-card__weight">210 гр</span>  
+                            </div>
+
+                            <div class="menu-card__body">
+                                <div class="menu-card__name fs-heading fw-500">
+                                    Осьминог по-сицилийски
+                                </div>
+
+                                <div class="menu-card__desc four-strokes">
+                                    Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро…
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-template__item">
+                        <a href="#" class="menu-card">
+                            <div class="menu-card__img">
+                                <div class="menu-card__img-item item-response">
+                                    <img loading="lazy" src="images/content/menu-card.png" alt="Осьминог по-сицилийски">
+                                </div>
+
+                                <span class="menu-card__weight">210 гр</span>  
+                            </div>
+
+                            <div class="menu-card__body">
+                                <div class="menu-card__name fs-heading fw-500">
+                                    Осьминог по-сицилийски
+                                </div>
+
+                                <div class="menu-card__desc four-strokes">
+                                    Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро…
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="menu-template__nav menu-template__nav--bottom js-nav-catalog">
+                    <div class="navigation-catalog swiper">
+                        <div class="navigation-catalog__row swiper-wrapper">
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Закуски </div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Супы</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Горячие блюда</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Салаты</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Гарниры</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Сладкое</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Напитки</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<%- footer() -%>

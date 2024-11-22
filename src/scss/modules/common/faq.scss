@@ -1,0 +1,149 @@
+.faq {
+    margin-bottom: 60px;
+    @media ($max767) {
+        margin-bottom: 50px;
+    }
+    &__row {
+        display: flex;
+        @media ($max767) {
+            display: block;
+        }
+    }
+    &__slider {
+        width: 50%;
+        padding-right: 51px;
+        overflow: hidden;
+
+        @media ($max1023) {
+            padding-right: 24px;
+        }
+
+        @media ($max767) {
+            min-width: 100%;
+            width: auto;
+            padding-right: 16px;
+            padding-left: 16px;
+            margin-right: -16px;
+            margin-bottom: 40px;
+            margin-left: -16px;
+        }
+
+        @media ($max767) {
+            .swiper {
+                overflow: visible;
+            }
+            .swiper-slide {
+                width: 158px;
+                margin-right: 12px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        @media ($min768) {
+            .swiper-wrapper {
+                flex-wrap: wrap;
+                gap: 50px 0;
+            }
+
+            .swiper-slide {
+                width: 50%;
+                &:first-child {
+                    width: 100%;
+                    .faq__img {
+                        &:before {
+                            padding-bottom: pct-s(275, 609);
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    .faq__img {
+                        width: pct-s(254, 305);
+                        &:before {
+                            padding-bottom: pct-s(220, 254);
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    .faq__img {
+                        width: pct-s(304, 305);
+                        &:before {
+                            padding-bottom: pct-s(260, 304);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__body {
+        width: 50%;
+
+        @media ($max767) {
+            width: 100%;
+        }
+    }
+    &__img {
+        align-self: flex-start;
+        @media ($max767) {
+            &:before {
+                padding-bottom: pct-s(167, 158);
+            }
+        }
+        img {
+            object-fit: cover;
+        }
+    }
+
+    &__item {
+        border-bottom: solid 1px $gray;
+    }
+
+    &__trigger {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        width: 100%;
+        padding: 12px 0;
+
+        @media ($max1023) {
+            gap: 12px;
+        }
+
+        &._active {
+            .faq__icon {
+                svg {
+                    &:first-child {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &:not(._active) {
+            .faq__icon {
+                svg {
+                    &:last-child {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    &__icon {
+        flex-shrink: 0;
+        width: 24px;
+        height: 24px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__text {
+        padding-right: 64px;
+        padding-bottom: 12px;
+        @media ($max1023) {
+            padding-right: 36px;
+        }
+    }
+}

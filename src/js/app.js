@@ -11,6 +11,8 @@ import { initSwitchTypes } from './modules/switchTypes';
 import { initTabs } from './modules/tabs';
 import { initOtherEventsSlider } from './modules/sliders/otherEvents';
 import { initNavigationCatalog } from './modules/sliders/navigationCatalog';
+import { initMobileSlider } from './modules/sliders/mobileSlider';
+import { initSpollers } from './modules/spollers';
 
 function initModules() {
 	initPreloader();
@@ -24,6 +26,8 @@ function initModules() {
 	initFilter();
 	initOtherEventsSlider();
 	initNavigationCatalog();
+	initMobileSlider();
+	initSpollers();
 }
 
 document.addEventListener('DOMContentLoaded', initModules);
