@@ -60,14 +60,14 @@
 				</div>
 				<button type="button" data-show-on="1023" class="burger js-trigger-menu">
 					Меню
-					<div class="burger__icon">
+					<span class="burger__icon">
 						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 4C1.5 3.72386 1.72386 3.5 2 3.5H14C14.2761 3.5 14.5 3.72386 14.5 4C14.5 4.27614 14.2761 4.5 14 4.5H2C1.72386 4.5 1.5 4.27614 1.5 4ZM1.5 8C1.5 7.72386 1.72386 7.5 2 7.5H14C14.2761 7.5 14.5 7.72386 14.5 8C14.5 8.27614 14.2761 8.5 14 8.5H2C1.72386 8.5 1.5 8.27614 1.5 8ZM1.5 12C1.5 11.7239 1.72386 11.5 2 11.5H14C14.2761 11.5 14.5 11.7239 14.5 12C14.5 12.2761 14.2761 12.5 14 12.5H2C1.72386 12.5 1.5 12.2761 1.5 12Z" fill="#121212"/>
 						</svg>
 						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M3.64645 3.64645C3.84171 3.45118 4.15829 3.45118 4.35355 3.64645L8 7.29289L11.6464 3.64645C11.8417 3.45118 12.1583 3.45118 12.3536 3.64645C12.5488 3.84171 12.5488 4.15829 12.3536 4.35355L8.70711 8L12.3536 11.6464C12.5488 11.8417 12.5488 12.1583 12.3536 12.3536C12.1583 12.5488 11.8417 12.5488 11.6464 12.3536L8 8.70711L4.35355 12.3536C4.15829 12.5488 3.84171 12.5488 3.64645 12.3536C3.45118 12.1583 3.45118 11.8417 3.64645 11.6464L7.29289 8L3.64645 4.35355C3.45118 4.15829 3.45118 3.84171 3.64645 3.64645Z" fill="#121212"/>
 						</svg>
-					</div>
+					</span>
 				</button>
 			</div>
 		</div>
@@ -112,7 +112,7 @@
                         <a href="#" download="#" class="btn btn--border btn--full-mob">Скачать договор</a>
                     </div>
                     <div class="customers__btns">
-                        <button type="button" href="#popup-request-tasting" data-fancybox="popup-request-tasting" class="btn btn--primary btn--full-mob js-popup-trigger">Записаться на дегустацию</button>
+                        <a href="#popup-request-tasting" data-fancybox="popup-request-tasting" class="btn btn--primary btn--full-mob js-popup-trigger">Записаться на дегустацию</a>
                     </div>
                 </div>
             </div>
@@ -314,8 +314,6 @@
         </div>
     </section>
 </main>
-    </main>
-
     <section class="request section bg-black c-white pv-120">
         <div class="container">
             <div class="request__row">
@@ -326,7 +324,7 @@
                     </div>
                 </div>
                 <div class="request__col">
-                    <form action="#" method="#" class="request__form form js-form">
+                    <form action="#" class="request__form form js-form">
                         <div class="form__body">
                             <div class="form__item">
                                 <div class="field js-input">
@@ -519,7 +517,7 @@
                             </div>
                         </div>
                         <div class="form__bottom">
-                            <input type="submit" class="btn btn--white btn--full" value="Отправить заявку"></input>
+                            <input type="submit" class="btn btn--white btn--full" value="Отправить заявку">
                         </div>
                     </form>
                 </div>
@@ -621,7 +619,7 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M5.64645 5.64645C5.84171 5.45118 6.15829 5.45118 6.35355 5.64645L12 11.2929L17.6464 5.64645C17.8417 5.45118 18.1583 5.45118 18.3536 5.64645C18.5488 5.84171 18.5488 6.15829 18.3536 6.35355L12.7071 12L18.3536 17.6464C18.5488 17.8417 18.5488 18.1583 18.3536 18.3536C18.1583 18.5488 17.8417 18.5488 17.6464 18.3536L12 12.7071L6.35355 18.3536C6.15829 18.5488 5.84171 18.5488 5.64645 18.3536C5.45118 18.1583 5.45118 17.8417 5.64645 17.6464L11.2929 12L5.64645 6.35355C5.45118 6.15829 5.45118 5.84171 5.64645 5.64645Z" fill="white"/>
         </svg>
     </button>
-    <form action="#" method="#" class="popup__wrapper request__form form js-form">
+    <form action="#" class="popup__wrapper request__form form js-form">
         <div class="popup__head">
             <h2 class="fs-display mb-8 mb-4-mob">Оставьте заявку</h2>
             <p>Мы перезвоним вам для обсуждения деталей</p>
@@ -819,7 +817,7 @@
             <div class="form__error">
                 Чтобы отправить заявку, нужно заполнить все поля
             </div>
-            <input type="submit" class="btn btn--white btn--full" value="Отправить заявку"></input>
+            <input type="submit" class="btn btn--white btn--full" value="Отправить заявку">
         </div>
     </form>
 </div>
@@ -830,7 +828,7 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M5.64645 5.64645C5.84171 5.45118 6.15829 5.45118 6.35355 5.64645L12 11.2929L17.6464 5.64645C17.8417 5.45118 18.1583 5.45118 18.3536 5.64645C18.5488 5.84171 18.5488 6.15829 18.3536 6.35355L12.7071 12L18.3536 17.6464C18.5488 17.8417 18.5488 18.1583 18.3536 18.3536C18.1583 18.5488 17.8417 18.5488 17.6464 18.3536L12 12.7071L6.35355 18.3536C6.15829 18.5488 5.84171 18.5488 5.64645 18.3536C5.45118 18.1583 5.45118 17.8417 5.64645 17.6464L11.2929 12L5.64645 6.35355C5.45118 6.15829 5.45118 5.84171 5.64645 5.64645Z" fill="white"/>
         </svg>
     </button>
-    <form action="#" method="#" class="popup__wrapper request__form form js-form">
+    <form action="#" class="popup__wrapper request__form form js-form">
         <div class="popup__head">
             <h2 class="fs-display mb-8 mb-4-mob">Заявка на дегустацию</h2>
             <p>Мы перезвоним вам для обсуждения деталей</p>
