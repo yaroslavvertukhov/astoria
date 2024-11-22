@@ -72,428 +72,314 @@
 			</div>
 		</div>
 	</header><main class="page">
-    <div class="filter section first-section-from-header js-filter">
+    <div class="first-section-from-header">
         <div class="container">
-            <button type="button" data-trigger class="filter__trigger">
-                Фильтр
-                <span data-count-total></span>
-                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 11C8.13261 11 8.25979 10.9473 8.35355 10.8536L12.3536 6.85355C12.5488 6.65829 12.5488 6.34171 12.3536 6.14645C12.1583 5.95118 11.8417 5.95118 11.6464 6.14645L8 9.79289L4.35355 6.14645C4.15829 5.95118 3.84171 5.95118 3.64645 6.14645C3.45118 6.34171 3.45118 6.65829 3.64645 6.85355L7.64645 10.8536C7.74021 10.9473 7.86739 11 8 11Z" fill="#121212"/>
-                </svg>
-            </button>
-            <div class="filter__wrapper">
-                <form action="#" method="#" class="filter__form">
-                    <button type="button" data-trigger class="filter__trigger">
-                        Фильтр
-                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.64645 4.14645C3.84171 3.95118 4.15829 3.95118 4.35355 4.14645L8 7.79289L11.6464 4.14645C11.8417 3.95118 12.1583 3.95118 12.3536 4.14645C12.5488 4.34171 12.5488 4.65829 12.3536 4.85355L8.70711 8.5L12.3536 12.1464C12.5488 12.3417 12.5488 12.6583 12.3536 12.8536C12.1583 13.0488 11.8417 13.0488 11.6464 12.8536L8 9.20711L4.35355 12.8536C4.15829 13.0488 3.84171 13.0488 3.64645 12.8536C3.45118 12.6583 3.45118 12.3417 3.64645 12.1464L7.29289 8.5L3.64645 4.85355C3.45118 4.65829 3.45118 4.34171 3.64645 4.14645Z" fill="#121212"/>
-                        </svg>
-                    </button>
-                    <div class="filter__body">
-                        <div class="filter__row">
-                            <div data-col class="filter__col">
-                                <button type="button" data-dd-trigger class="filter__title">
-                                    Формат
-                                    <span data-count="0" data-count-type="checkbox"></span>
-                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.33301 11C8.46562 11 8.59279 10.9473 8.68656 10.8536L12.6866 6.85355C12.8818 6.65829 12.8818 6.34171 12.6866 6.14645C12.4913 5.95118 12.1747 5.95118 11.9795 6.14645L8.33301 9.79289L4.68656 6.14645C4.4913 5.95118 4.17472 5.95118 3.97945 6.14645C3.78419 6.34171 3.78419 6.65829 3.97945 6.85355L7.97945 10.8536C8.07322 10.9473 8.2004 11 8.33301 11Z" fill="currentColor"/>
-                                    </svg>
-                                </button>
-                                <div class="filter__dropdown">
-                                    <div class="filter__list">
-                                        <label class="field-filter">
-                                            <input type="checkbox" data-input class="field-filter__input">
-                                            <span class="field-filter__text">
-                                                <span>Фуршет</span>
-                                                <span class="field-filter__body">
-                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </label>
-                                        <label class="field-filter">
-                                            <input type="checkbox" data-input class="field-filter__input">
-                                            <span class="field-filter__text">
-                                                <span>Шведский стол</span>
-                                                <span class="field-filter__body">
-                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </label>
-                                        <label class="field-filter">
-                                            <input type="checkbox" data-input class="field-filter__input">
-                                            <span class="field-filter__text">
-                                                <span>Банкет</span>
-                                                <span class="field-filter__body">
-                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </label>
-                                        <label class="field-filter">
-                                            <input type="checkbox" data-input class="field-filter__input">
-                                            <span class="field-filter__text">
-                                                <span>Коктейл-пати</span>
-                                                <span class="field-filter__body">
-                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                </div>
+            <div class="menu-template">
+                <div class="menu-template__nav js-nav-catalog">
+                    <div class="navigation-catalog swiper">
+                        <div class="navigation-catalog__row swiper-wrapper">
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link _active">Все</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Закуски </div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Супы</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Горячие блюда</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Салаты</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Гарниры</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Сладкое</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Напитки</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-template__description">
+                    <div class="product-block">
+                        <div class="product-block__image">
+                            <div class="product-block__image-bx item-response">
+                                <img loading="lazy" src="images/content/menu-card-big.png" alt="Осьминог по-сицилийски">
                             </div>
-                            <div data-col class="filter__col">
-                                <button type="button" data-dd-trigger class="filter__title">
-                                    Тип
-                                    <span data-count="0" data-count-type="checkbox"></span>
-                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.33301 11C8.46562 11 8.59279 10.9473 8.68656 10.8536L12.6866 6.85355C12.8818 6.65829 12.8818 6.34171 12.6866 6.14645C12.4913 5.95118 12.1747 5.95118 11.9795 6.14645L8.33301 9.79289L4.68656 6.14645C4.4913 5.95118 4.17472 5.95118 3.97945 6.14645C3.78419 6.34171 3.78419 6.65829 3.97945 6.85355L7.97945 10.8536C8.07322 10.9473 8.2004 11 8.33301 11Z" fill="currentColor"/>
-                                    </svg>
-                                </button>
-                                <div class="filter__dropdown">
-                                    <div class="filter__list">
-                                        <label class="field-filter">
-                                            <input type="checkbox" data-input class="field-filter__input">
-                                            <span class="field-filter__text">
-                                                <span>Свадьба</span>
-                                                <span class="field-filter__body">
-                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </label>
-                                        <label class="field-filter">
-                                            <input type="checkbox" data-input class="field-filter__input">
-                                            <span class="field-filter__text">
-                                                <span>Корпоратив</span>
-                                                <span class="field-filter__body">
-                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </label>
-                                        <label class="field-filter">
-                                            <input type="checkbox" data-input class="field-filter__input">
-                                            <span class="field-filter__text">
-                                                <span>День рождения</span>
-                                                <span class="field-filter__body">
-                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                </div>
+                        </div>
+
+                        <div class="product-block__info">
+                            <h1 class="product-block__title fs-display title-italic">
+                                Осьминог по-сицилийски
+                            </h1>
+
+                            <div class="product-block__text">
+                                Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро)
                             </div>
-                            <div data-col class="filter__col">
-                                <button type="button" data-dd-trigger class="filter__title">
-                                    Кол-во гостей
-                                    <span data-count="0" data-count-type="radio"></span>
-                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.33301 11C8.46562 11 8.59279 10.9473 8.68656 10.8536L12.6866 6.85355C12.8818 6.65829 12.8818 6.34171 12.6866 6.14645C12.4913 5.95118 12.1747 5.95118 11.9795 6.14645L8.33301 9.79289L4.68656 6.14645C4.4913 5.95118 4.17472 5.95118 3.97945 6.14645C3.78419 6.34171 3.78419 6.65829 3.97945 6.85355L7.97945 10.8536C8.07322 10.9473 8.2004 11 8.33301 11Z" fill="currentColor"/>
-                                    </svg>
-                                </button>
-                                <div class="filter__dropdown">
-                                    <div class="filter__list">
-                                        <label class="field-filter">
-                                            <input type="radio" data-input name="filter-radio-1" class="field-filter__input">
-                                            <span class="field-filter__text">
-                                                <span data-text>0–50</span>
-                                                <span class="field-filter__body">
-                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </label>
-                                        <label class="field-filter">
-                                            <input type="radio" data-input name="filter-radio-1" class="field-filter__input">
-                                            <span class="field-filter__text">
-                                                <span data-text>50–100</span>
-                                                <span class="field-filter__body">
-                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </label>
-                                        <label class="field-filter">
-                                            <input type="radio" data-input name="filter-radio-1" class="field-filter__input">
-                                            <span class="field-filter__text">
-                                                <span data-text>100–200</span>
-                                                <span class="field-filter__body">
-                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </label>
-                                        <label class="field-filter">
-                                            <input type="radio" data-input name="filter-radio-1" class="field-filter__input">
-                                            <span class="field-filter__text">
-                                                <span data-text>200–500</span>
-                                                <span class="field-filter__body">
-                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6872 3.64645C13.8825 3.84171 13.8825 4.15829 13.6872 4.35355L6.35388 11.6869C6.15862 11.8821 5.84203 11.8821 5.64677 11.6869L2.31344 8.35355C2.11818 8.15829 2.11818 7.84171 2.31344 7.64645C2.5087 7.45118 2.82528 7.45118 3.02055 7.64645L6.00033 10.6262L12.9801 3.64645C13.1754 3.45118 13.4919 3.45118 13.6872 3.64645Z" fill="#7A2C1A"/>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                </div>
+
+                            <div class="product-block__weight">
+                                210 гр
+                            </div>
+
+                            <div class="product-block__btns">
+                                <button type="button" href="#popup-request-tasting" data-fancybox="popup-request-tasting" class="btn btn--primary js-popup-trigger">Записаться на дегустацию</button>
+                                <button type="button" href="#popup-request" data-fancybox="popup-request" class="btn btn--border js-popup-trigger">Оставить заявку</button>
                             </div>
                         </div>
                     </div>
-                    <div class="filter__bottom">
-                        <input type="submit" class="btn btn--primary btn--full" value="Показать мероприятия"></input>
+                </div>
+
+                <h2 class="title-dots fs-body-accent mb-40 mb-24-mob">Другие горячие блюда</h2>
+
+                <div class="menu-template__row">
+                    <div class="menu-template__item">
+                        <a href="#" class="menu-card">
+                            <div class="menu-card__img">
+                                <div class="menu-card__img-item item-response">
+                                    <img loading="lazy" src="images/content/menu-card.png" alt="Осьминог по-сицилийски">
+                                </div>
+
+                                <span class="menu-card__weight">210 гр</span>  
+                            </div>
+
+                            <div class="menu-card__body">
+                                <div class="menu-card__name fs-heading fw-500">
+                                    Осьминог по-сицилийски
+                                </div>
+
+                                <div class="menu-card__desc four-strokes">
+                                    Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро…
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </form>
+
+                    <div class="menu-template__item">
+                        <a href="#" class="menu-card">
+                            <div class="menu-card__img">
+                                <div class="menu-card__img-item item-response">
+                                    <img loading="lazy" src="images/content/menu-card.png" alt="Осьминог по-сицилийски">
+                                </div>
+
+                                <span class="menu-card__weight">210 гр</span>  
+                            </div>
+
+                            <div class="menu-card__body">
+                                <div class="menu-card__name fs-heading fw-500">
+                                    Осьминог по-сицилийски
+                                </div>
+
+                                <div class="menu-card__desc four-strokes">
+                                    Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро…
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-template__item">
+                        <a href="#" class="menu-card">
+                            <div class="menu-card__img">
+                                <div class="menu-card__img-item item-response">
+                                    <img loading="lazy" src="images/content/menu-card.png" alt="Осьминог по-сицилийски">
+                                </div>
+
+                                <span class="menu-card__weight">210 гр</span>  
+                            </div>
+
+                            <div class="menu-card__body">
+                                <div class="menu-card__name fs-heading fw-500">
+                                    Осьминог по-сицилийски
+                                </div>
+
+                                <div class="menu-card__desc four-strokes">
+                                    Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро…
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-template__item">
+                        <a href="#" class="menu-card">
+                            <div class="menu-card__img">
+                                <div class="menu-card__img-item item-response">
+                                    <img loading="lazy" src="images/content/menu-card.png" alt="Осьминог по-сицилийски">
+                                </div>
+
+                                <span class="menu-card__weight">210 гр</span>  
+                            </div>
+
+                            <div class="menu-card__body">
+                                <div class="menu-card__name fs-heading fw-500">
+                                    Осьминог по-сицилийски
+                                </div>
+
+                                <div class="menu-card__desc four-strokes">
+                                    Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро…
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-template__item">
+                        <a href="#" class="menu-card">
+                            <div class="menu-card__img">
+                                <div class="menu-card__img-item item-response">
+                                    <img loading="lazy" src="images/content/menu-card.png" alt="Осьминог по-сицилийски">
+                                </div>
+
+                                <span class="menu-card__weight">210 гр</span>  
+                            </div>
+
+                            <div class="menu-card__body">
+                                <div class="menu-card__name fs-heading fw-500">
+                                    Осьминог по-сицилийски
+                                </div>
+
+                                <div class="menu-card__desc four-strokes">
+                                    Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро…
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-template__item">
+                        <a href="#" class="menu-card">
+                            <div class="menu-card__img">
+                                <div class="menu-card__img-item item-response">
+                                    <img loading="lazy" src="images/content/menu-card.png" alt="Осьминог по-сицилийски">
+                                </div>
+
+                                <span class="menu-card__weight">210 гр</span>  
+                            </div>
+
+                            <div class="menu-card__body">
+                                <div class="menu-card__name fs-heading fw-500">
+                                    Осьминог по-сицилийски
+                                </div>
+
+                                <div class="menu-card__desc four-strokes">
+                                    Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро…
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-template__item">
+                        <a href="#" class="menu-card">
+                            <div class="menu-card__img">
+                                <div class="menu-card__img-item item-response">
+                                    <img loading="lazy" src="images/content/menu-card.png" alt="Осьминог по-сицилийски">
+                                </div>
+
+                                <span class="menu-card__weight">210 гр</span>  
+                            </div>
+
+                            <div class="menu-card__body">
+                                <div class="menu-card__name fs-heading fw-500">
+                                    Осьминог по-сицилийски
+                                </div>
+
+                                <div class="menu-card__desc four-strokes">
+                                    Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро…
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-template__item">
+                        <a href="#" class="menu-card">
+                            <div class="menu-card__img">
+                                <div class="menu-card__img-item item-response">
+                                    <img loading="lazy" src="images/content/menu-card.png" alt="Осьминог по-сицилийски">
+                                </div>
+
+                                <span class="menu-card__weight">210 гр</span>  
+                            </div>
+
+                            <div class="menu-card__body">
+                                <div class="menu-card__name fs-heading fw-500">
+                                    Осьминог по-сицилийски
+                                </div>
+
+                                <div class="menu-card__desc four-strokes">
+                                    Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро…
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-template__item">
+                        <a href="#" class="menu-card">
+                            <div class="menu-card__img">
+                                <div class="menu-card__img-item item-response">
+                                    <img loading="lazy" src="images/content/menu-card.png" alt="Осьминог по-сицилийски">
+                                </div>
+
+                                <span class="menu-card__weight">210 гр</span>  
+                            </div>
+
+                            <div class="menu-card__body">
+                                <div class="menu-card__name fs-heading fw-500">
+                                    Осьминог по-сицилийски
+                                </div>
+
+                                <div class="menu-card__desc four-strokes">
+                                    Отварной осьминог, мини-картофель, сливочное масло, перец болгарский печеный, томаты черри, шпинат, масло зеленое базиликовое, соус ромеско (соус мутти, перец рамиро…
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="menu-template__nav menu-template__nav--bottom js-nav-catalog">
+                    <div class="navigation-catalog swiper">
+                        <div class="navigation-catalog__row swiper-wrapper">
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Закуски </div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Супы</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Горячие блюда</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Салаты</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Гарниры</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Сладкое</div>
+                            </a>
+
+                            <a href="#" class="navigation-catalog__item swiper-slide">
+                                <div class="navigation-catalog__link">Напитки</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <section class="section pb-60">
-        <div class="container">
-            <div class="grid">
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-01.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Банкет для официального приема</div>
-                        <div class="card-grid__text">12 000 рублей на человека</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-02.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Фуршет для «Центр национальных конных традиций»</div>
-                        <div class="card-grid__text">12 000 рублей на человека</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-03.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Выездной банкет у реки</div>
-                        <div class="card-grid__text">Выездной банкет у реки</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-04.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Выездной бар на Патриках</div>
-                        <div class="card-grid__text">12 000 рублей на человека</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-05.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Выездной welcome-drink</div>
-                        <div class="card-grid__text">12 000 рублей на человека</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-01.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Банкет для официального приема</div>
-                        <div class="card-grid__text">12 000 рублей на человека</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-02.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Фуршет для «Центр национальных конных традиций»</div>
-                        <div class="card-grid__text">12 000 рублей на человека</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-03.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Выездной банкет у реки</div>
-                        <div class="card-grid__text">Выездной банкет у реки</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-04.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Выездной бар на Патриках</div>
-                        <div class="card-grid__text">12 000 рублей на человека</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-05.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Выездной welcome-drink</div>
-                        <div class="card-grid__text">12 000 рублей на человека</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-06.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Фуршет для «Центр национальных конных традиций»</div>
-                        <div class="card-grid__text">12 000 рублей на человека</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-01.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Банкет для официального приема</div>
-                        <div class="card-grid__text">12 000 рублей на человека</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-02.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Фуршет для «Центр национальных конных традиций»</div>
-                        <div class="card-grid__text">12 000 рублей на человека</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-03.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Выездной банкет у реки</div>
-                        <div class="card-grid__text">Выездной банкет у реки</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-04.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Выездной бар на Патриках</div>
-                        <div class="card-grid__text">12 000 рублей на человека</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-05.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Выездной welcome-drink</div>
-                        <div class="card-grid__text">12 000 рублей на человека</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-01.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Банкет для официального приема</div>
-                        <div class="card-grid__text">12 000 рублей на человека</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-02.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Фуршет для «Центр национальных конных традиций»</div>
-                        <div class="card-grid__text">12 000 рублей на человека</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-03.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Выездной банкет у реки</div>
-                        <div class="card-grid__text">Выездной банкет у реки</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-04.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Выездной бар на Патриках</div>
-                        <div class="card-grid__text">12 000 рублей на человека</div>
-                    </a>
-                </div>
-                <div class="grid__col">
-                    <a href="#" class="card-grid">
-                        <div class="card-grid__img item-response">
-                            <img loading="lazy" src="images/content/grid-05.jpg" alt="">
-                        </div>
-                        <div class="card-grid__title fs-heading fw-500">Выездной welcome-drink</div>
-                        <div class="card-grid__text">12 000 рублей на человека</div>
-                    </a>
-                </div>
-            </div>
-            <div class="pagination-wrapper">
-                <div class="pagination">
-    <a href="#" class="pagination__item">
-        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8536 3.64645C10.6583 3.45118 10.3417 3.45118 10.1464 3.64645L6.14645 7.64645C6.05268 7.74021 6 7.86739 6 8C6 8.13261 6.05268 8.25979 6.14645 8.35355L10.1464 12.3536C10.3417 12.5488 10.6583 12.5488 10.8536 12.3536C11.0488 12.1583 11.0488 11.8417 10.8536 11.6464L7.20711 8L10.8536 4.35355C11.0488 4.15829 11.0488 3.84171 10.8536 3.64645Z" fill="currentColor"/>
-        </svg>
-
-        <span>Назад</span>
-    </a>
-
-    <a href="#" class="pagination__item">
-        1
-    </a>
-
-    <a href="#" class="pagination__item">
-        2
-    </a>
-
-    <a href="#" class="pagination__item _active">
-        3
-    </a>
-
-    <a href="#" class="pagination__item">
-        4
-    </a>
-
-    <a href="#" class="pagination__item">
-        5
-    </a>
-
-    <a href="#" class="pagination__item">
-        <span>Вперед</span>
-        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.14645 3.64645C6.34171 3.45118 6.65829 3.45118 6.85355 3.64645L10.8536 7.64645C10.9473 7.74021 11 7.86739 11 8C11 8.13261 10.9473 8.25979 10.8536 8.35355L6.85355 12.3536C6.65829 12.5488 6.34171 12.5488 6.14645 12.3536C5.95118 12.1583 5.95118 11.8417 6.14645 11.6464L9.79289 8L6.14645 4.35355C5.95118 4.15829 5.95118 3.84171 6.14645 3.64645Z" fill="currentColor"/>
-        </svg>  
-    </a>
-</div>            </div>
-        </div>
-    </section>
-
 </main>
     </main>
 
