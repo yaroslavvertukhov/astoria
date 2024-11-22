@@ -129,10 +129,25 @@
             }
         }
     }
+    &__trigger-text{
+        max-width: 563px;
+    }
     &__icon {
+        display: block;
         flex-shrink: 0;
         width: 24px;
         height: 24px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__icon-static {
+        flex-shrink: 0;
+        width: 16px;
+        height: 16px;
 
         svg {
             width: 100%;

@@ -16,12 +16,13 @@
 	display: none;
 	position: relative;
 	width: 100%;
-	max-width: 620px;
+	max-width: 640px;
 	max-height: 100%;
 	padding: 24px 40px 40px;
 	@media ($max767) {
-		padding: 24px 16px;
 		height: 100%;
+		max-width: 100%;
+		padding: 24px 16px;
 	}
 	&__close {
 		z-index: 1;

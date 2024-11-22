@@ -1,0 +1,313 @@
+<% 
+const header = require('./layouts/basic/header.ejs'); 
+const footer = require('./layouts/basic/footer.ejs'); 
+%> 
+<%- header()-%>
+<main class="page">
+    <div class="section first-section-from-header">
+        <div class="container">
+            <a href="#" class="page-back">
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3536 4.14645C10.1583 3.95118 9.84171 3.95118 9.64645 4.14645L5.64645 8.14645C5.55268 8.24021 5.5 8.36739 5.5 8.5C5.5 8.63261 5.55268 8.75979 5.64645 8.85355L9.64645 12.8536C9.84171 13.0488 10.1583 13.0488 10.3536 12.8536C10.5488 12.6583 10.5488 12.3417 10.3536 12.1464L6.70711 8.5L10.3536 4.85355C10.5488 4.65829 10.5488 4.34171 10.3536 4.14645Z" fill="#121212"/>
+                </svg>
+                Назад
+            </a>
+        </div>
+    </div>
+
+    <section class="banner banner--static section">
+        <div class="container">
+            <div class="banner__item item-response">
+                <img src="images/content/banner-01.jpg" alt="">
+            </div>
+            <div class="banner__row">
+                <div class="banner__col">
+                    <h1 class="banner__title title-italic fs-display mb-48 mb-24-mob">Мероприятие со&nbsp;спектаклем</h1>
+                    <div class="banner__btns">
+                        <a href="#popup-request" data-fancybox="popup-request" class="btn btn--primary btn--full-mob js-popup-trigger">Оставить заявку</a>
+                    </div>
+                </div>
+                <div class="banner__col">
+                    <div class="banner__list">
+                        <div class="banner__list-col">
+                            <div class="banner__list-item">
+                                <div class="mb-8">Стоимость питания на персону</div>
+                                <div class="fs-heading c-primary">от 5 000 ₽</div>
+                            </div>
+                            <div class="banner__list-item">
+                                <div class="mb-8">Стоимость спектакля</div>
+                                <div class="fs-heading c-primary">Выкуп части билетов/аренда спектакля</div>
+                            </div>
+                        </div>
+                        <div class="banner__list-col">
+                            <div class="banner__list-item">
+                                <div class="mb-8">⁠Минимальное количество гостей</div>
+                                <div class="fs-heading c-primary">от 10 персон</div>
+                            </div>
+                            <div class="banner__list-item">
+                                <div class="mb-8">Отдельный зал</div>
+                                <div class="fs-heading c-primary">Можно арендовать зал</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner__slider js-slider-mobile" data-init="1023">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="banner__slider-img item-response">
+                                <img loading="lazy" src="images/content/banner-slider-01.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner__slider-img item-response">
+                                <img loading="lazy" src="images/content/banner-slider-02.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner__slider-img item-response">
+                                <img loading="lazy" src="images/content/banner-slider-03.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner__row">
+                <div class="banner__col">
+
+                </div>
+                <div class="banner__col">
+                    <div class="fs-heading mb-12">Совместить поход в театр и ваше мероприятие легко, достаточно оставить заявку и мы поможем вам:</div>
+                    <div class="faq__items">
+                        <div class="faq__item">
+                            <div class="faq__trigger">
+                                <div class="faq__trigger-text">
+                                    Выбрать спектакль
+                                </div>
+                                <div class="faq__icon-static">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C5.85916 3.83098 3.60563 5.74648 0 8C3.2676 10.2535 5.52113 11.6056 8 16C10.4789 11.6056 12.7324 10.2535 16 8C12.338 5.80281 10.1408 3.83098 8 0Z" fill="#7A2C1A"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__trigger">
+                                <div class="faq__trigger-text">
+                                    ⁠Выкупить часть билетов или полностью арендовать спектакль на ваше мероприятие
+                                </div>
+                                <div class="faq__icon-static">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C5.85916 3.83098 3.60563 5.74648 0 8C3.2676 10.2535 5.52113 11.6056 8 16C10.4789 11.6056 12.7324 10.2535 16 8C12.338 5.80281 10.1408 3.83098 8 0Z" fill="#7A2C1A"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__trigger">
+                                <div class="faq__trigger-text">
+                                    Арендовать отдельный зал для размещения небольшого количества ваших гостей
+                                </div>
+                                <div class="faq__icon-static">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C5.85916 3.83098 3.60563 5.74648 0 8C3.2676 10.2535 5.52113 11.6056 8 16C10.4789 11.6056 12.7324 10.2535 16 8C12.338 5.80281 10.1408 3.83098 8 0Z" fill="#7A2C1A"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__trigger">
+                                <div class="faq__trigger-text">
+                                    ⁠Арендовать полностью площадку для вашего закрытого мероприятия со спектаклем
+                                </div>
+                                <div class="faq__icon-static">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C5.85916 3.83098 3.60563 5.74648 0 8C3.2676 10.2535 5.52113 11.6056 8 16C10.4789 11.6056 12.7324 10.2535 16 8C12.338 5.80281 10.1408 3.83098 8 0Z" fill="#7A2C1A"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__trigger">
+                                <div class="faq__trigger-text">
+                                    Организовать сервис на вашем мероприятии
+                                </div>
+                                <div class="faq__icon-static">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C5.85916 3.83098 3.60563 5.74648 0 8C3.2676 10.2535 5.52113 11.6056 8 16C10.4789 11.6056 12.7324 10.2535 16 8C12.338 5.80281 10.1408 3.83098 8 0Z" fill="#7A2C1A"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__trigger">
+                                <div class="faq__trigger-text">
+                                    Интегрировать ваших подрядчиков
+                                </div>
+                                <div class="faq__icon-static">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C5.85916 3.83098 3.60563 5.74648 0 8C3.2676 10.2535 5.52113 11.6056 8 16C10.4789 11.6056 12.7324 10.2535 16 8C12.338 5.80281 10.1408 3.83098 8 0Z" fill="#7A2C1A"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner banner--static section">
+        <div class="container">
+            <div class="banner__item item-response">
+                <img src="images/content/banner-01.jpg" alt="">
+            </div>
+            <div class="banner__row">
+                <div class="banner__col">
+                    <h2 class="banner__title title-italic fs-display mb-48 mb-24-mob">Мероприятие с&nbsp;конной программой</h2>
+                    <div class="banner__btns">
+                        <a href="#popup-request" data-fancybox="popup-request" class="btn btn--primary btn--full-mob js-popup-trigger">Оставить заявку</a>
+                    </div>
+                </div>
+                <div class="banner__col">
+                    <div class="banner__list">
+                        <div class="banner__list-col">
+                            <div class="banner__list-item">
+                                <div class="mb-8">Стоимость питания на персону</div>
+                                <div class="fs-heading c-primary">от 5 000 ₽</div>
+                            </div>
+                            <div class="banner__list-item">
+                                <div class="mb-8">Стоимость спектакля</div>
+                                <div class="fs-heading c-primary">Выкуп части билетов/аренда спектакля</div>
+                            </div>
+                        </div>
+                        <div class="banner__list-col">
+                            <div class="banner__list-item">
+                                <div class="mb-8">⁠Минимальное количество гостей</div>
+                                <div class="fs-heading c-primary">от 10 персон</div>
+                            </div>
+                            <div class="banner__list-item">
+                                <div class="mb-8">Отдельный зал</div>
+                                <div class="fs-heading c-primary">Можно арендовать зал</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner__slider banner__slider--reverse-two-three js-slider-mobile" data-init="1023">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="banner__slider-img item-response">
+                                <img loading="lazy" src="images/content/banner-slider-04.jpg" alt="">
+                            </div>
+                            <div class="banner__slider-text">Развлекательная программа с лошадьми это всегда зрелищно</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner__slider-list">
+                                <ul>
+                                    <li>Джигитовка</li>
+                                    <li>⁠Конный театр</li>
+                                    <li>Конный котельон</li>
+                                    <li>Скачки</li>
+                                    <li>Бега</li>
+                                </ul>
+                            </div>
+                            <div class="banner__slider-text">В конном мире существуют множество видов дисциплин, но самыми популярными на частных мероприятиях являются следующие дисциплины</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner__slider-img item-response">
+                                <img loading="lazy" src="images/content/banner-slider-05.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner__row">
+                <div class="banner__col">
+
+                </div>
+                <div class="banner__col">
+                    <div class="fs-heading mb-12">Совместить поход в театр и ваше мероприятие легко, достаточно оставить заявку и мы поможем вам:</div>
+                    <div class="faq__items">
+                        <div class="faq__item">
+                            <div class="faq__trigger">
+                                <div class="faq__trigger-text">
+                                    Выбрать спектакль
+                                </div>
+                                <div class="faq__icon-static">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C5.85916 3.83098 3.60563 5.74648 0 8C3.2676 10.2535 5.52113 11.6056 8 16C10.4789 11.6056 12.7324 10.2535 16 8C12.338 5.80281 10.1408 3.83098 8 0Z" fill="#7A2C1A"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__trigger">
+                                <div class="faq__trigger-text">
+                                    ⁠Выкупить часть билетов или полностью арендовать спектакль на ваше мероприятие
+                                </div>
+                                <div class="faq__icon-static">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C5.85916 3.83098 3.60563 5.74648 0 8C3.2676 10.2535 5.52113 11.6056 8 16C10.4789 11.6056 12.7324 10.2535 16 8C12.338 5.80281 10.1408 3.83098 8 0Z" fill="#7A2C1A"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__trigger">
+                                <div class="faq__trigger-text">
+                                    Арендовать отдельный зал для размещения небольшого количества ваших гостей
+                                </div>
+                                <div class="faq__icon-static">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C5.85916 3.83098 3.60563 5.74648 0 8C3.2676 10.2535 5.52113 11.6056 8 16C10.4789 11.6056 12.7324 10.2535 16 8C12.338 5.80281 10.1408 3.83098 8 0Z" fill="#7A2C1A"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__trigger">
+                                <div class="faq__trigger-text">
+                                    ⁠Арендовать полностью площадку для вашего закрытого мероприятия со спектаклем
+                                </div>
+                                <div class="faq__icon-static">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C5.85916 3.83098 3.60563 5.74648 0 8C3.2676 10.2535 5.52113 11.6056 8 16C10.4789 11.6056 12.7324 10.2535 16 8C12.338 5.80281 10.1408 3.83098 8 0Z" fill="#7A2C1A"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__trigger">
+                                <div class="faq__trigger-text">
+                                    Организовать сервис на вашем мероприятии
+                                </div>
+                                <div class="faq__icon-static">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C5.85916 3.83098 3.60563 5.74648 0 8C3.2676 10.2535 5.52113 11.6056 8 16C10.4789 11.6056 12.7324 10.2535 16 8C12.338 5.80281 10.1408 3.83098 8 0Z" fill="#7A2C1A"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__trigger">
+                                <div class="faq__trigger-text">
+                                    Интегрировать ваших подрядчиков
+                                </div>
+                                <div class="faq__icon-static">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C5.85916 3.83098 3.60563 5.74648 0 8C3.2676 10.2535 5.52113 11.6056 8 16C10.4789 11.6056 12.7324 10.2535 16 8C12.338 5.80281 10.1408 3.83098 8 0Z" fill="#7A2C1A"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<%- footer() -%>
