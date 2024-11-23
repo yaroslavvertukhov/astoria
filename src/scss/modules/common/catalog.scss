@@ -1,0 +1,253 @@
+.catalog {
+    display: flex;
+    @media ($max1023) {
+        display: block;
+    }
+    &__side {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 246px;
+        margin-right: 60px;
+
+        @media ($max1439) {
+            margin-right: 24px;
+        }
+
+        @media ($max1023) {
+            max-width: 100%;
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
+    }
+    &__wrapper {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -9px;
+        @media ($max767) {
+            margin: -5px;
+        }
+    }
+    &__col {
+        width: 33.333%;
+        padding: 9px;
+
+        @media ($max767) {
+            width: 50%;
+            padding: 5px;
+        }
+    }
+}
+
+.card-catalog {
+    padding: 16px 24px;
+    border: 1px solid $gray;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+
+    @media ($max1279) {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    @media ($hover) {
+        &:hover {
+            .card-catalog {
+                &__name {
+                    color: $primaryHover;
+                }
+            }
+        }
+    }
+
+    &__body {
+        padding-top: 16px;
+        border-top: 1px solid $gray;
+
+        @media ($max1279) {
+            padding-top: 12px;
+        }
+    }
+
+    &__img {
+        position: relative;
+    }
+
+    &__img-item {
+        &:before {
+            padding-bottom: pct-s(304, 276);
+            @media ($max767) {
+                padding-bottom: 100%;
+            }
+        }
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    &__weight {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        font-size: 13px;
+
+        @media ($max767) {
+            bottom: 0;
+            font-size: 12px;
+        }
+    }
+
+    &__name {
+        transition: 0.3s color;
+    }
+}
+
+.filter-catalog {
+    &._active {
+        .filter-catalog__wrapper {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+    &__trigger {
+        @media ($max1023) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            width: 100%;
+            padding: 8px;
+            border-top: solid 1px $gray;
+            border-bottom: solid 1px $gray;
+        }
+        @media ($min1024) {
+            display: none;
+        }
+
+        svg {
+            flex-shrink: 0;
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &__wrapper {
+        @media ($max1023) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $white;
+            z-index: 9;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+    }
+
+    &__form {
+        @media ($max1023) {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 64px 16px 24px;
+        }
+    }
+
+    &__body {
+        @media ($max1023) {
+            flex: 1 1 auto;
+            overflow: auto;
+            padding-right: 16px;
+            padding-left: 16px;
+            margin-right: -16px;
+            margin-left: -16px;
+        }
+    }
+
+    &__row {
+        @media ($max1023) {
+            padding: 24px 0;
+        }
+    }
+
+    &__col {
+        margin-bottom: 24px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    &__bottom {
+        @media ($min1024) {
+            display: none;
+        }
+    }
+}
+
+.field-filter-catalog {
+    display: inline-flex;
+    cursor: pointer;
+
+    @media ($hover) {
+        &:hover {
+            .field-filter-catalog__body {
+                border-color: $primary;
+            }
+        }
+    }
+    &__input {
+        display: none;
+        &:checked {
+            ~ .field-filter-catalog__body {
+                border-color: $primary;
+
+                svg {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__text {
+        display: block;
+        padding-left: 12px;
+    }
+
+    &__body {
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        border: solid 1px $gray;
+        transition: border-color 0.3s;
+
+        svg {
+            width: 16px;
+            height: 16px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+    }
+}

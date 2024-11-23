@@ -110,6 +110,15 @@
             gap: 12px;
         }
 
+        &.js-spoller-trigger {
+            @media ($hover) {
+                transition: color 0.3s;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+
         &._active {
             .faq__icon {
                 svg {
@@ -129,7 +138,7 @@
             }
         }
     }
-    &__trigger-text{
+    &__trigger-text {
         max-width: 563px;
     }
     &__icon {

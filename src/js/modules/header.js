@@ -72,7 +72,9 @@ export default class Header {
 	}
 
 	get isFilterOpen() {
-		const filter = document.querySelector('.js-filter');
+		const filter =
+			document.querySelector('.js-filter') ||
+			document.querySelector('.js-filter-catalog');
 		return filter && filter.instanceFilter.isOpen;
 	}
 }

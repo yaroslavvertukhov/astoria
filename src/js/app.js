@@ -13,6 +13,9 @@ import { initOtherEventsSlider } from './modules/sliders/otherEvents';
 import { initNavigationCatalog } from './modules/sliders/navigationCatalog';
 import { initMobileSlider } from './modules/sliders/mobileSlider';
 import { initSpollers } from './modules/spollers';
+import { initFilterCatalog } from './modules/filterCatalog';
+import { initPlatformSlider } from './modules/sliders/platform';
+import { initBlogDetailedSlider } from './modules/sliders/blogDetailed';
 
 function initModules() {
 	initPreloader();
@@ -28,6 +31,9 @@ function initModules() {
 	initNavigationCatalog();
 	initMobileSlider();
 	initSpollers();
+	initFilterCatalog();
+	initPlatformSlider();
+	initBlogDetailedSlider();
 }
 
 document.addEventListener('DOMContentLoaded', initModules);

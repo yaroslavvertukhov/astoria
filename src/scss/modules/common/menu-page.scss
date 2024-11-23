@@ -18,6 +18,16 @@
 			margin-top: 40px;
 			margin-bottom: 0;
 		}
+
+		+ .page-back-section {
+			margin-top: -44px;
+			@media ($max1279) {
+				margin-top: 0;
+			}
+			.page-back {
+				margin-top: 0;
+			}
+		}
 	}
 
 	&__row {
@@ -62,6 +72,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
+	height: 100%;
 
 	@media ($max1279) {
 		padding: 12px;

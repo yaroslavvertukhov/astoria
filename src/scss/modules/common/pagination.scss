@@ -11,15 +11,15 @@
 	justify-content: center;
 	align-items: center;
 	gap: 32px;
-	margin-top: 40px;
+	margin-top: 60px;
+
+	@media ($max1023) {
+		margin-top: 24px;
+	}
 
 	@media ($max399) {
 		justify-content: space-between;
 		gap: 16px;
-	}
-
-	@media ($max1023) {
-		margin-top: 24px;
 	}
 
 	&__item {

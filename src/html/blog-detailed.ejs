@@ -1,0 +1,171 @@
+<% 
+const header = require('./layouts/basic/header.ejs'); 
+const footer = require('./layouts/basic/footer.ejs'); 
+%> 
+<%- header()-%>
+<main class="page">
+    <div class="page-back-section section first-section-from-header">
+        <div class="container">
+            <a href="#" class="page-back">
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3536 4.14645C10.1583 3.95118 9.84171 3.95118 9.64645 4.14645L5.64645 8.14645C5.55268 8.24021 5.5 8.36739 5.5 8.5C5.5 8.63261 5.55268 8.75979 5.64645 8.85355L9.64645 12.8536C9.84171 13.0488 10.1583 13.0488 10.3536 12.8536C10.5488 12.6583 10.5488 12.3417 10.3536 12.1464L6.70711 8.5L10.3536 4.85355C10.5488 4.65829 10.5488 4.34171 10.3536 4.14645Z" fill="#121212"/>
+                </svg>
+                Назад
+            </a>
+        </div>
+    </div>
+
+    <section class="blog-detailed section pb-120 pb-60-mob">
+        <div class="container">
+            <div class="blog-detailed__row">
+                <div class="blog-detailed__col">
+                    <div class="blog-detailed__img item-response">
+                        <img src="images/content/blog-detailed-banner.jpg" alt="">
+                    </div>
+                </div>
+                <div class="blog-detailed__col">
+                    <div class="blog-detailed__slider js-slider-blog-detailed">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="blog-detailed__slider-img item-response">
+                                        <img loading="lazy" src="images/content/blog-detailed-slider-01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blog-detailed__slider-img item-response">
+                                        <img loading="lazy" src="images/content/blog-detailed-slider-02.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blog-detailed__slider-img item-response">
+                                        <img loading="lazy" src="images/content/blog-detailed-slider-01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blog-detailed__slider-img item-response">
+                                        <img loading="lazy" src="images/content/blog-detailed-slider-02.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blog-detailed__slider-img item-response">
+                                        <img loading="lazy" src="images/content/blog-detailed-slider-01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blog-detailed__slider-img item-response">
+                                        <img loading="lazy" src="images/content/blog-detailed-slider-02.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-detailed__row blog-detailed__row--content">
+                <div class="blog-detailed__col">
+                    <div class="blog-detailed__body">
+                        <div class="blog-detailed__title fs-heading fw-500">Вкус и стиль: организация премиальных событий на ВДНХ</div>
+                        <p>Организация мероприятий на ВДНХ открывает массу возможностей для создания незабываемых событий. Наш выездной Площадки предлагает индивидуальные меню от бренд-шефа, что позволяет подчеркнуть уникальность каждого события. Профессиональная команда заботится о каждом аспекте, от декора до подачи блюд, обеспечивая высочайший уровень сервиса и комфорт для гостей.</p>
+                    </div>
+                </div>
+                <div class="blog-detailed__col">
+                    <div class="blog-detailed__tags">
+                        <div class="blog-detailed__tag">500 человек</div>
+                        <div class="blog-detailed__tag">Свадебный банкет</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog section pb-120 pb-60-mob">
+        <div class="container">
+            <div class="blog__row">
+                <div class="blog__col">
+                    <div class="blog__cards">
+                        <div class="blog__cards-row">
+                            <div class="blog__cards-col">
+                                <a href="#" class="card-other-blog">
+                                    <div class="card-other-blog__img item-response">
+                                        <img loading="lazy" src="images/content/card-other-blog-01.jpg" alt="">
+                                    </div>
+                                    <div class="card-other-blog__tags">
+                                        <div class="card-other-blog__tag">500 человек</div>
+                                        <div class="card-other-blog__tag">Свадебный банкет</div>
+                                    </div>
+                                    <div class="card-other-blog__body">
+                                        <div class="card-other-blog__title fs-heading fw-500">Тренды в кейтеринге для премиум-сегмента</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="blog__cards-col">
+                                <a href="#" class="card-other-blog">
+                                    <div class="card-other-blog__img item-response">
+                                        <img loading="lazy" src="images/content/card-other-blog-02.jpg" alt="">
+                                    </div>
+                                    <div class="card-other-blog__tags">
+                                        <div class="card-other-blog__tag">500 человек</div>
+                                        <div class="card-other-blog__tag">Свадебный банкет</div>
+                                    </div>
+                                    <div class="card-other-blog__body">
+                                        <div class="card-other-blog__title fs-heading fw-500">Истории успеха: как наши мероприятия помогли клиентам достичь целей</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="blog__cards-col">
+                                <a href="#" class="card-other-blog">
+                                    <div class="card-other-blog__img item-response">
+                                        <img loading="lazy" src="images/content/card-other-blog-03.jpg" alt="">
+                                    </div>
+                                    <div class="card-other-blog__tags">
+                                        <div class="card-other-blog__tag">500 человек</div>
+                                        <div class="card-other-blog__tag">Свадебный банкет</div>
+                                    </div>
+                                    <div class="card-other-blog__body">
+                                        <div class="card-other-blog__title fs-heading fw-500">Гастрономическое искусство: как мы создаем идеальные блюда</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="blog__cards-col">
+                                <a href="#" class="card-other-blog">
+                                    <div class="card-other-blog__img item-response">
+                                        <img loading="lazy" src="images/content/card-other-blog-04.jpg" alt="">
+                                    </div>
+                                    <div class="card-other-blog__tags">
+                                        <div class="card-other-blog__tag">500 человек</div>
+                                        <div class="card-other-blog__tag">Свадебный банкет</div>
+                                    </div>
+                                    <div class="card-other-blog__body">
+                                        <div class="card-other-blog__title fs-heading fw-500">Истории успеха: как наши мероприятия помогли клиентам достичь целей</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__col">
+                    <div class="blog__list">
+                        <a href="#" class="blog__list-item">
+                            <div class="blog__list-title fs-heading fw-500">Как Создать Незабываемое Мероприятие: Советы от Экспертов</div>
+                            <p>Узнайте, как наша команда организует впечатляющие события, начиная с идеи и заканчивая реализацией.</p>
+                        </a>
+                        <a href="#" class="blog__list-item">
+                            <div class="blog__list-title fs-heading fw-500">Преимущества выездного Площадкиа для корпоративных мероприятий</div>
+                            <p>Рассмотрим, как выездной Площадки может повысить престиж и продуктивность корпоративных ивентов.</p>
+                        </a>
+                        <a href="#" class="blog__list-item">
+                            <div class="blog__list-title fs-heading fw-500">Эксклюзивные кейтеринг-меню от нашего бренд-шефа</div>
+                            <p>Погрузитесь в мир эксклюзивных блюд, которые наш шеф-повар разрабатывает специально для вас.</p>
+                        </a>
+                        <a href="#" class="blog__list-item">
+                            <div class="blog__list-title fs-heading fw-500">Идеальные локации для ваших мероприятий: ВДНХ и ипподром</div>
+                            <p>Обзор лучших площадок для проведения мероприятий с выездным Площадкиом.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%- footer() -%>

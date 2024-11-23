@@ -38,9 +38,9 @@ export default class NavigationCatalog {
 }
 
 export function initNavigationCatalog() {
-	const navigations = document.querySelectorAll('.js-nav-catalog');
+	const selectors = document.querySelectorAll('.js-nav-catalog');
 
-	for (const el of navigations) {
+	for (const el of selectors) {
 		new NavigationCatalog(el);
 	}
 }

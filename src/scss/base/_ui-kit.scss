@@ -184,6 +184,9 @@
 .pt-60 {
 	padding-top: 60px;
 }
+.pt-120 {
+	padding-top: 120px;
+}
 .pt-50-mob {
 	@media ($max767) {
 		padding-top: 50px;
@@ -201,6 +204,11 @@
 .pb-80-tablet {
 	@media ($max1023) {
 		padding-bottom: 80px;
+	}
+}
+.pb-0-mob {
+	@media ($max767) {
+		padding-bottom: 0px;
 	}
 }
 .pb-50-mob {
@@ -305,7 +313,11 @@
 		display: none;
 	}
 }
-
+.page-back-section {
+	+ .menu-template {
+		padding-top: 0;
+	}
+}
 .page-back {
 	display: inline-flex;
 	align-items: center;

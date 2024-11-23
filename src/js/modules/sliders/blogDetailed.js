@@ -1,6 +1,6 @@
-import Swiper, { Navigation }from 'swiper';
+import Swiper from 'swiper';
 
-export default class OtherEventsSlider {
+export default class BlogDetailedSlider {
 	constructor(container) {
 		if (!container) {
 			return;
@@ -9,9 +9,6 @@ export default class OtherEventsSlider {
 		this.container = container;
 
 		this.slider = this.container.querySelector('.swiper');
-
-		this.prev = this.container.querySelector('.js-btn-prev');
-		this.next = this.container.querySelector('.js-btn-next');
 
 		this.swiperSlider = null;
 
@@ -28,22 +25,17 @@ export default class OtherEventsSlider {
 
 	get options() {
 		return {
-			modules: [Navigation],
 			speed: 500,
 			slidesPerView: 'auto',
 			spaceBetween: 0,
-			navigation: {
-				nextEl: this.next,
-				prevEl: this.prev,
-			},
 		};
 	}
 }
 
-export function initOtherEventsSlider() {
-	const selectors = document.querySelectorAll('.js-slider-other-events');
+export function initBlogDetailedSlider() {
+	const selectors = document.querySelectorAll('.js-slider-blog-detailed');
 
 	for (const el of selectors) {
-		new OtherEventsSlider(el);
+		new BlogDetailedSlider(el);
 	}
 }
