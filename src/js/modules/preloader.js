@@ -12,11 +12,15 @@ export default class Preloader {
 		this.itemBanner =
 			this.banner && this.banner.querySelector('.js-banner-item');
 
+		this.scrollbarSize = window.innerWidth - document.body.offsetWidth;
+
 		this.delayCheckLoad = 500;
 		this.animTransition = 1000;
 		this.delayOnFullscreen = 3000;
 
 		this.rect = null;
+
+		this.itemBannerHeight = 0;
 		this.top = 0;
 		this.left = 0;
 		this.bottom = 0;
@@ -28,7 +32,7 @@ export default class Preloader {
 		this.bindMethods();
 		this.onInit();
 
-		if (this.banner && !this.isMobile) {
+		if (this.banner) {
 			this.addListenerResize();
 		}
 	}
@@ -86,10 +90,9 @@ export default class Preloader {
 		}, this.delayOnFullscreen);
 
 		setTimeout(() => {
-			document.body.style.overflow = '';
-			document.body.style.touchAction = '';
+			this.unlockBody();
 			this.banner.classList.add('_visible');
-			this.loader.style.display = 'none';
+			this.onResize();
 		}, this.delayOnFullscreen + this.animTransition);
 	}
 
@@ -103,24 +106,31 @@ export default class Preloader {
 		setTimeout(() => {
 			this.hideLoader();
 			setTimeout(() => {
-				document.body.style.overflow = '';
-				document.body.style.touchAction = '';
-				this.loader.style.display = 'none';
+				this.unlockBody();
 			}, this.animTransition);
 		}, this.delayCheckLoad);
 	}
 
+	unlockBody() {
+		document.body.classList.remove('_lock-for-preloader');
+		this.loader.style.display = 'none';
+	}
+
 	setClipPath() {
-		this.itemBanner.style.clipPath = `inset(${this.top}px ${this.left}px ${this.bottom}px ${this.left}px)`;
+		this.itemBanner.style.clipPath = `inset(${this.top}px ${this.right}px ${this.bottom}px ${this.left}px)`;
 	}
 
 	getVideoPosition() {
+		this.itemBannerHeight = +window
+			.getComputedStyle(this.itemBanner)
+			.height.replace('px', '');
 		this.rect = this.boxBanner.getBoundingClientRect();
-		this.top = this.rect.top;
+		this.top = this.boxBanner.offsetTop;
 		this.left = this.rect.left;
+		this.scrollbarSize = window.innerWidth - document.body.offsetWidth;
+		this.right = this.left + this.scrollbarSize;
 		this.bottom =
-			+window.getComputedStyle(this.itemBanner).height.replace('px', '') -
-			this.rect.bottom;
+			this.itemBannerHeight - this.top - this.boxBanner.clientHeight;
 	}
 
 	get isMobile() {

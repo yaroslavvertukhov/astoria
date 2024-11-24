@@ -16,11 +16,11 @@
 		}
 	}
 	&__logo {
-		display: flex;
-		max-height: 280px;
+		width: pct-s(280, 1010);
 		filter: grayscale(1);
-		// &:before {
-		//     padding-bottom: pct-s(280, 1010);
-		// }
+
+		img {
+			object-fit: contain;
+		}
 	}
 }

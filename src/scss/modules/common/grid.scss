@@ -182,13 +182,9 @@
 		margin-bottom: 16px;
 		overflow: hidden;
 		@media ($max1023) {
-			position: relative;
 			&:before {
 				padding-bottom: pct-s(167, 158);
 			}
-		}
-		img {
-			object-fit: cover;
 		}
 	}
 	&__title {

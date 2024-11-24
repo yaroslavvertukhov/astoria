@@ -17,9 +17,10 @@
     &._visible {
         .banner {
             &__item {
-                item {
+                video {
                     z-index: 0;
                     pointer-events: none;
+                    transition: none;
                 }
             }
             &__body {
@@ -223,9 +224,6 @@
             @media ($max1023) {
                 padding-bottom: pct-s(171, 305);
             }
-        }
-        img {
-            object-fit: cover;
         }
     }
     &__slider-list {

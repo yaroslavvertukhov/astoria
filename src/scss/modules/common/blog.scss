@@ -171,9 +171,6 @@
                 padding-bottom: pct-s(198, 328);
             }
         }
-        img {
-            object-fit: cover;
-        }
     }
 
     &__tags {
@@ -244,9 +241,6 @@
                 padding-bottom: pct-s(198, 328);
             }
         }
-        img {
-            object-fit: cover;
-        }
     }
 
     &__slider {
@@ -298,9 +292,6 @@
             @media ($max767) {
                 padding-bottom: pct-s(167, 150);
             }
-        }
-        img {
-            object-fit: cover;
         }
     }
 
