@@ -14,8 +14,12 @@
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="">
 <link rel="icon" href="favicon.ico"><link href="css/app.css" rel="stylesheet"></head>
-<body style="overflow: hidden; touch-action: none;">
+<body class="_lock-for-preloader">
 <style>
+	body._lock-for-preloader{
+		overflow: hidden;
+		touch-action: none;
+	}
 	.preloader{
 		position: fixed;
 		top: 0;
@@ -316,13 +320,13 @@
                 <a href="#popup-request" data-fancybox="popup-request" class="btn btn--primary btn--full-mob js-popup-trigger">Оставить заявку</a>
             </div>
             <div class="partners__logos">
-                <a href="#" class="partners__logo">
+                <a href="#" class="partners__logo item-response">
                     <img loading="lazy" src="images/content/partners-01.png" alt="">
                 </a>
-                <a href="#" class="partners__logo">
+                <a href="#" class="partners__logo item-response">
                     <img loading="lazy" src="images/content/partners-02.png" alt="">
                 </a>
-                <a href="#" class="partners__logo">
+                <a href="#" class="partners__logo item-response">
                     <img loading="lazy" src="images/content/partners-03.png" alt="">
                 </a>
             </div>
